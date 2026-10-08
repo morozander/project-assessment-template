@@ -1,11 +1,12 @@
 import { readFileSync } from "fs";
 
+// Replace AUTH_TOKEN if GET/PATCH returns 401.
 const AUTH_TOKEN =
-  "eyJraWQiOiJzMkJpb2NCT3EyM1BmYTh5eTMxYVJJQzM2UGM1OVpsbjY0R0dUNlY1TlRZPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4M2Q0Zjg4Mi1mMDgxLTcwNTgtMGYxMC01YzQ3ODI4ZjI3NGMiLCJjb2duaXRvOmdyb3VwcyI6WyJldS1jZW50cmFsLTFfYXg3QU92R3JJX0dvb2dsZSJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9heDdBT3ZHckkiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2NGtiamp2M3JzdDZlMG8zbzNobTM0NzlpcyIsIm9yaWdpbl9qdGkiOiIzZjQ0NWNkMS0yMzI4LTQyMWYtODVkMS1jNTM0YTdhNTU4MjYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzc2NDA5Njk0LCJleHAiOjE3NzY0MTczNTUsImlhdCI6MTc3NjQxMzc1NSwianRpIjoiNzkxOTllY2UtMmM0ZC00OTdjLWFhYjktZDViNGM4NWQ1ZGNhIiwidXNlcm5hbWUiOiJHb29nbGVfMTExNDAwNjE1ODQ4NDgxOTQwNTUyIn0.TWfXpMWL88xwJiDaSx2t_eN_sqe4jaNhgkn82FzYtr5EWh_rwkSBU8WWYm5eeuW_O-jCgLjqp0xHgI9oIWpoINRQ8h9MHs2ViRlNM0tDXDw04egjcRULI-FwJjVQRWGNeOuo99HtaoFV4wWfG_6cYrGZJDPLKQDUaMjOKkOJxNoj7Bc7cFzMizWWvwHK4stVPPGpHeslYWJbexyq-yz-KQJlP9iqMbdsqh3lg2wp_wHGNBCf0pUYJ_CEqauz4QzvN7yGSeiTW5yWxlqUxJXG0NHJSNqylfRlrNoswacsfOXH_W6rv9Zn1NAQzcpe9JxZ-z-owMyqkEmvEAqmdgRluQ";
+  "eyJraWQiOiJzMkJpb2NCT3EyM1BmYTh5eTMxYVJJQzM2UGM1OVpsbjY0R0dUNlY1TlRZPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4M2Q0Zjg4Mi1mMDgxLTcwNTgtMGYxMC01YzQ3ODI4ZjI3NGMiLCJjb2duaXRvOmdyb3VwcyI6WyJldS1jZW50cmFsLTFfYXg3QU92R3JJX0dvb2dsZSJdLCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLmV1LWNlbnRyYWwtMS5hbWF6b25hd3MuY29tL2V1LWNlbnRyYWwtMV9heDdBT3ZHckkiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2NGtiamp2M3JzdDZlMG8zbzNobTM0NzlpcyIsIm9yaWdpbl9qdGkiOiI3ZDAwYWZiYS00ZWU1LTRhYWYtOWQ2OS05Y2I1MWI3MjZhYTQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzkxNDUzMTY5LCJleHAiOjE3OTE0NjcxMzIsImlhdCI6MTc5MTQ2MzUzMiwianRpIjoiZjU0ZTU3YmItMTA2Yy00M2IwLThhNTYtNzdiNmExYzY5NDczIiwidXNlcm5hbWUiOiJHb29nbGVfMTExNDAwNjE1ODQ4NDgxOTQwNTUyIn0.ik4Dl7-5eRV8FuSZTQJBcWQft1UVPigzUp9KZCcy2uoKk2ixSgeuPwiVrL7csuN8P8cMFJSUXFMtr6s7QA4wkDw0qmOQgQvqPGiHaGyiHkD7bIVL30TKn-dAr5JFNTON4XrhbET1961ofCqfcSXdBVO4zrMmBMJikym88JDbQ80CAZjgEoKx7qiiEPGtIw3UTew1l66TcPISBrHdc0BopjtjUURS3cG5ikuYYqkHk2TZ34ijWnnG7pSEdljd9JnKK8M8X6m-rzaBEsT2dTMmZTVr2pYMWz0k5OpxYhKPPdf6ERqVgvBmqS1WEV54VGkrM4Nxq3DxEvAkMmyvquyIaQ";
 
-const ASSESSMENT_ID = "d01fc1fe-c06e-4000-a90a-aa079308f920";
+const ASSESSMENT_ID = "1d00ab78-1417-4506-be3b-2cd73db5d31e";
 const API_BASE = "https://api.assessments.geniusee.com/prod/api/v1";
-const CSV_PATH = "./output/panthers-capital/working_version.csv";
+const CSV_PATH = "./output/quantgenie-web-ui-dev/working_version.csv";
 
 const COMMON_HEADERS: Record<string, string> = {
   accept: "application/json, text/plain, */*",
@@ -23,6 +24,16 @@ const COMMON_HEADERS: Record<string, string> = {
   "user-agent":
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
   "x-timezone-offset": "-180",
+};
+
+type ApiTask = {
+  id: string;
+  required: boolean;
+  implementationStatus: string | null;
+  priority: string | null;
+  note: string;
+  score: number | null;
+  templateTask?: { body?: string };
 };
 
 function parseCsv(content: string): Record<string, string>[] {
@@ -83,27 +94,13 @@ async function main() {
   });
   if (!getRes.ok) {
     console.error(`GET failed: ${getRes.status} ${getRes.statusText}`);
+    const body = await getRes.text();
+    console.error(body.slice(0, 500));
     process.exit(1);
   }
   const data = (await getRes.json()) as {
-    tasks?: Array<{
-      id: string;
-      required: boolean;
-      implementationStatus: string | null;
-      priority: string | null;
-      note: string;
-      score: number | null;
-      templateTask?: { body?: string };
-    }>;
-    kickOffAssessmentTasks?: Array<{
-      id: string;
-      required: boolean;
-      implementationStatus: string | null;
-      priority: string | null;
-      note: string;
-      score: number | null;
-      templateTask?: { body?: string };
-    }>;
+    tasks?: ApiTask[];
+    kickOffAssessmentTasks?: ApiTask[];
   };
 
   const apiTasks = data.tasks ?? data.kickOffAssessmentTasks ?? [];
@@ -111,45 +108,63 @@ async function main() {
 
   let matched = 0;
   let unmatched = 0;
+  let skippedDone = 0;
   const preview: string[] = [];
 
   const updatedTasks = apiTasks.map((task) => {
     const taskBody = task.templateTask?.body ?? "";
-    if (noteMap.has(taskBody)) {
-      matched++;
-      const newNote = noteMap.get(taskBody)!;
-      const newStatus = statusMap.has(taskBody)
-        ? statusMap.get(taskBody)!
-        : task.implementationStatus;
-      if (preview.length < 5) {
-        preview.push(
-          `  [${taskBody}] note: "${newNote}" | status: ${newStatus}`
-        );
-      }
-      return {
-        id: task.id,
-        required: task.required,
-        implementationStatus: newStatus,
-        priority: task.priority,
-        note: newNote,
-        score: task.score,
-      };
-    } else {
+    const base = {
+      id: task.id,
+      required: task.required,
+      implementationStatus: task.implementationStatus,
+      priority: task.priority,
+      note: task.note,
+      score: task.score,
+    };
+
+    if (!noteMap.has(taskBody)) {
       unmatched++;
-      return {
-        id: task.id,
-        required: task.required,
-        implementationStatus: task.implementationStatus,
-        priority: task.priority,
-        note: task.note,
-        score: task.score,
-      };
+      return base;
     }
+
+    matched++;
+
+    // Already Done — leave note and implementationStatus unchanged.
+    if (task.implementationStatus === "Done") {
+      skippedDone++;
+      return base;
+    }
+
+    const newNote = noteMap.get(taskBody)!;
+    const newStatus = statusMap.has(taskBody)
+      ? statusMap.get(taskBody)!
+      : task.implementationStatus;
+
+    const changed =
+      newNote !== (task.note ?? "") || newStatus !== task.implementationStatus;
+
+    if (changed && preview.length < 5) {
+      preview.push(
+        `  [${taskBody}] note: "${newNote}" | status: ${task.implementationStatus} → ${newStatus}`,
+      );
+    }
+
+    return {
+      ...base,
+      implementationStatus: newStatus,
+      note: newNote,
+    };
   });
 
-  console.log(`\nMatched: ${matched} | Unmatched: ${unmatched}`);
-  console.log("Preview of first 5 changes:");
-  preview.forEach((p) => console.log(p));
+  console.log(
+    `\nMatched: ${matched} | Unmatched: ${unmatched} | Skipped Done: ${skippedDone}`,
+  );
+  console.log("Preview of first 5 tasks that change:");
+  if (preview.length === 0) {
+    console.log("  (none)");
+  } else {
+    preview.forEach((p) => console.log(p));
+  }
 
   const patchRes = await fetch(`${API_BASE}/kick-offs-assessments/${ASSESSMENT_ID}`, {
     method: "PATCH",

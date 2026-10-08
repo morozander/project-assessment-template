@@ -8,4 +8,6 @@ Read and follow the update-assessment-dashboard skill at `.claude/skills/update-
 
 The skill will guide you through:
 
-1. Understanding the steps that nedds to be done
+1. Asking the user for `ASSESSMENT_ID` and `AUTH_TOKEN` before continuing. Do not read the CSV, write the script, or call the API until both values are provided.
+2. Understanding the steps that need to be done
+3. Before running `npx tsx update-notes.ts`, confirming with the user that the `ASSESSMENT_ID` is the right assessment

@@ -36,6 +36,7 @@ The agent writes the filled-in checklist and the summary report here, in a sub-f
    - Review the project line by line
    - Fill in `is implemented` (`yes` / `no` / `partial` / `n/a`) and add `notes` where needed
    - Write a summary report to `output/<project-name>/`
+4. The project assessment dashboard url: https://assessments.geniusee.com/assessments. You can get there your Bearer token and the relevant ASSESSMENT_ID.
 
 ## Checklist Structure
 
@@ -57,7 +58,8 @@ After the CSV is filled, the `update-assessment-dashboard` skill generates a sta
 1. GETs the current state from the API
 2. Matches each API task to the CSV via `templateTask.body` ↔ `task_body`
 3. Maps `yes` → `"Done"`, `no` → `"Open"`, anything else → keeps the existing API value
-4. PATCHes the API with updated `note` and `implementationStatus`
+4. Skips `note` and `implementationStatus` updates when the existing task is already `"Done"`
+5. PATCHes the API with updated `note` and `implementationStatus` for the remaining tasks
 
 Paste the project-specific GET and PATCH curl commands into the prompts when the skill asks for them.
 

@@ -17,7 +17,7 @@ When updating assessment dashboard.
    curl 'https://api.assessments.geniusee.com/prod/api/v1/kick-offs-assessments/d01fc1fe-c06e-4000-a90a-aa079308f920' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9,ru-UA;q=0.8,ru;q=0.7,uk-UA;q=0.6,uk;q=0.5' \
-  -H 'authorization: Bearer eyJraWQiOiJzMkJpb2NCT3EyM1BmYTh5eTMxYVJJQzM2UGM1OVpsbjY0R0dUNlY1TlRZPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4M2Q0Zjg4Mi1mMDgxLTcwNTgtMGYxMC01YzQ3ODI4ZjI3NGMiLCJjb2duaXRvOmdyb3VwcyI6WyJldS1jZW50cmFsLTFfYXg3QU92R3JJX0dvb2dsZSJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9heDdBT3ZHckkiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2NGtiamp2M3JzdDZlMG8zbzNobTM0NzlpcyIsIm9yaWdpbl9qdGkiOiIzZjQ0NWNkMS0yMzI4LTQyMWYtODVkMS1jNTM0YTdhNTU4MjYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzc2NDA5Njk0LCJleHAiOjE3NzY0MTczNTUsImlhdCI6MTc3NjQxMzc1NSwianRpIjoiNzkxOTllY2UtMmM0ZC00OTdjLWFhYjktZDViNGM4NWQ1ZGNhIiwidXNlcm5hbWUiOiJHb29nbGVfMTExNDAwNjE1ODQ4NDgxOTQwNTUyIn0.TWfXpMWL88xwJiDaSx2t_eN_sqe4jaNhgkn82FzYtr5EWh_rwkSBU8WWYm5eeuW_O-jCgLjqp0xHgI9oIWpoINRQ8h9MHs2ViRlNM0tDXDw04egjcRULI-FwJjVQRWGNeOuo99HtaoFV4wWfG_6cYrGZJDPLKQDUaMjOKkOJxNoj7Bc7cFzMizWWvwHK4stVPPGpHeslYWJbexyq-yz-KQJlP9iqMbdsqh3lg2wp_wHGNBCf0pUYJ_CEqauz4QzvN7yGSeiTW5yWxlqUxJXG0NHJSNqylfRlrNoswacsfOXH_W6rv9Zn1NAQzcpe9JxZ-z-owMyqkEmvEAqmdgRluQ' \
+  -H 'authorization: Bearer bearer_token' \
   -H 'if-none-match: W/"2910b-nB0ZQGUp6s+mHQm4OBccS5u8tJw"' \
   -H 'origin: https://assessments.geniusee.com' \
   -H 'priority: u=1, i' \
@@ -36,7 +36,7 @@ When updating assessment dashboard.
   -X 'PATCH' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9,ru-UA;q=0.8,ru;q=0.7,uk-UA;q=0.6,uk;q=0.5' \
-  -H 'authorization: Bearer eyJraWQiOiJzMkJpb2NCT3EyM1BmYTh5eTMxYVJJQzM2UGM1OVpsbjY0R0dUNlY1TlRZPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4M2Q0Zjg4Mi1mMDgxLTcwNTgtMGYxMC01YzQ3ODI4ZjI3NGMiLCJjb2duaXRvOmdyb3VwcyI6WyJldS1jZW50cmFsLTFfYXg3QU92R3JJX0dvb2dsZSJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9heDdBT3ZHckkiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2NGtiamp2M3JzdDZlMG8zbzNobTM0NzlpcyIsIm9yaWdpbl9qdGkiOiIzZjQ0NWNkMS0yMzI4LTQyMWYtODVkMS1jNTM0YTdhNTU4MjYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzc2NDA5Njk0LCJleHAiOjE3NzY0MTczNTUsImlhdCI6MTc3NjQxMzc1NSwianRpIjoiNzkxOTllY2UtMmM0ZC00OTdjLWFhYjktZDViNGM4NWQ1ZGNhIiwidXNlcm5hbWUiOiJHb29nbGVfMTExNDAwNjE1ODQ4NDgxOTQwNTUyIn0.TWfXpMWL88xwJiDaSx2t_eN_sqe4jaNhgkn82FzYtr5EWh_rwkSBU8WWYm5eeuW_O-jCgLjqp0xHgI9oIWpoINRQ8h9MHs2ViRlNM0tDXDw04egjcRULI-FwJjVQRWGNeOuo99HtaoFV4wWfG_6cYrGZJDPLKQDUaMjOKkOJxNoj7Bc7cFzMizWWvwHK4stVPPGpHeslYWJbexyq-yz-KQJlP9iqMbdsqh3lg2wp_wHGNBCf0pUYJ_CEqauz4QzvN7yGSeiTW5yWxlqUxJXG0NHJSNqylfRlrNoswacsfOXH_W6rv9Zn1NAQzcpe9JxZ-z-owMyqkEmvEAqmdgRluQ' \
+  -H 'authorization: Bearer bearer_token' \
   -H 'content-type: application/json' \
   -H 'origin: https://assessments.geniusee.com' \
   -H 'priority: u=1, i' \
@@ -60,6 +60,10 @@ The CSV file is `./output/<project>/working_version.csv`. It has these columns:
 
 ## What to do
 
+### Before continuing
+
+Ask the user for `ASSESSMENT_ID` and `AUTH_TOKEN`. Do not read the CSV, write `update-notes.ts`, or call the API until both values are provided. Put those values in the script constants. Ignore the sample assessment id and `bearer_token` in the curl examples above.
+
 Create a standalone TypeScript script (`update-notes.ts`, run with `npx tsx`) that:
 
 1. Reads the CSV and builds two maps keyed by `task_body`:
@@ -67,8 +71,9 @@ Create a standalone TypeScript script (`update-notes.ts`, run with `npx tsx`) th
    - `task_body → implementationStatus` (only "yes"/"no" map to "Done"/"Open"; skip others)
 2. GETs the current assessment from the API
 3. Matches each API task to CSV by comparing `templateTask.body` === `task_body`
-4. Builds the PATCH payload preserving existing fields (`id`, `required`, `priority`, `score`) from the GET response, replacing `note` and `implementationStatus` from the CSV
+4. Builds the PATCH payload preserving existing fields (`id`, `required`, `priority`, `score`) from the GET response. If the existing task `implementationStatus` is `Done`, leave `note` and `implementationStatus` unchanged. Otherwise replace `note` from the CSV and set `implementationStatus` from the CSV mapping (`yes` → `Done`, `no` → `Open`; `partial` / `n/a` keep the existing status). Every task is still included in the payload.
 5. Sends the PATCH request with `{ kickOffAssessmentTasks: [...] }`
-6. Logs: total matched/unmatched, a preview of first 5 changes, and the PATCH response status
+6. Logs: total matched/unmatched/skipped-Done, a preview of the first 5 tasks that actually change (exclude skipped Done tasks), and the PATCH response status. Also create a changes.ts file with all logs that happened and put it in the `./output/<project>/changes.ts`
+7. Ask the user for permission to run the script, and show the `ASSESSMENT_ID` that will be updated. Ask them to confirm it is the right assessment. Run `npx tsx update-notes.ts` from the repository root only after they agree to run it and confirm that id. If they decline or say the id is wrong, stop without running it. After a successful run, report the logged matched/unmatched/skipped-Done counts and the PATCH response status.
 
-Use Node built-in `fetch` and a simple inline CSV parser (no external deps). Extract auth token and custom headers as constants at the top for easy replacement.
+Use Node built-in `fetch` and a simple inline CSV parser (no external deps). Set `ASSESSMENT_ID` and `AUTH_TOKEN` from the values the user provided. Extract other custom headers as constants at the top.

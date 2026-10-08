@@ -52,7 +52,8 @@ After the assessment CSV is filled, the `update-assessment-dashboard` skill gene
 1. GETs the current state from a remote API
 2. Matches each API task to the CSV via `templateTask.body` ↔ `task_body`
 3. Maps `yes` → `"Done"`, `no` → `"Open"`, anything else → keeps the existing API value
-4. PATCHes the API with updated `note` and `implementationStatus`
+4. Skips `note` and `implementationStatus` updates when the existing task is already `"Done"`
+5. PATCHes the API with updated `note` and `implementationStatus` for the remaining tasks
 
 To use this skill, paste the project-specific GET and PATCH curl commands into the prompts when the skill asks for them.
 
