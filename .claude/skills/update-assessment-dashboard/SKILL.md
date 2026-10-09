@@ -64,16 +64,26 @@ The CSV file is `./output/<project>/working_version.csv`. It has these columns:
 
 Ask the user for `ASSESSMENT_ID` and `AUTH_TOKEN`. Do not read the CSV, write `update-notes.ts`, or call the API until both values are provided. Put those values in the script constants. Ignore the sample assessment id and `bearer_token` in the curl examples above.
 
+### Before running
+
+Ask the user for permission to run the script, and show the `ASSESSMENT_ID` that will be updated. Ask them to confirm it is the right assessment. Run `npx tsx update-notes.ts` from the repository root only after they agree to run it and confirm that id. If they decline or say the id is wrong, stop without running it. After a successful run, report the logged matched/unmatched/skipped-Done counts and the PATCH response status.
+
 Create a standalone TypeScript script (`update-notes.ts`, run with `npx tsx`) that:
 
 1. Reads the CSV and builds two maps keyed by `task_body`:
    - `task_body → notes`
    - `task_body → implementationStatus` (only "yes"/"no" map to "Done"/"Open"; skip others)
 2. GETs the current assessment from the API
-3. Matches each API task to CSV by comparing `templateTask.body` === `task_body`
-4. Builds the PATCH payload preserving existing fields (`id`, `required`, `priority`, `score`) from the GET response. If the existing task `implementationStatus` is `Done`, leave `note` and `implementationStatus` unchanged. Otherwise replace `note` from the CSV and set `implementationStatus` from the CSV mapping (`yes` → `Done`, `no` → `Open`; `partial` / `n/a` keep the existing status). Every task is still included in the payload.
-5. Sends the PATCH request with `{ kickOffAssessmentTasks: [...] }`
-6. Logs: total matched/unmatched/skipped-Done, a preview of the first 5 tasks that actually change (exclude skipped Done tasks), and the PATCH response status. Also create a changes.ts file with all logs that happened and put it in the `./output/<project>/changes.ts`
-7. Ask the user for permission to run the script, and show the `ASSESSMENT_ID` that will be updated. Ask them to confirm it is the right assessment. Run `npx tsx update-notes.ts` from the repository root only after they agree to run it and confirm that id. If they decline or say the id is wrong, stop without running it. After a successful run, report the logged matched/unmatched/skipped-Done counts and the PATCH response status.
+3. Writes `./output/<project>/config.csv` from that GET when the file does not already exist. The file has a header row `assessmentScore,bestPracticeScore` and one data row with those two fields. Leave an existing `config.csv` unchanged so later runs keep the original baseline. Never write post-PATCH scores into `config.csv`.
+4. Matches each API task to CSV by comparing `templateTask.body` === `task_body`
+5. Builds the PATCH payload preserving existing fields (`id`, `required`, `priority`, `score`) from the GET response. If the existing task `implementationStatus` is `Done`, leave `note` and `implementationStatus` unchanged. Otherwise replace `note` from the CSV and set `implementationStatus` from the CSV mapping (`yes` → `Done`, `no` → `Open`; `partial` / `n/a` keep the existing status). Every task is still included in the payload.
+6. Sends the PATCH request with `{ kickOffAssessmentTasks: [...] }`
+7. Logs to stdout: total matched/unmatched/skipped-Done, a preview of the first 5 tasks that actually change (exclude skipped Done tasks), and the PATCH response status.
+8. When the PATCH succeeds, GETs the assessment again and reads the new `assessmentScore` and `bestPracticeScore`. When the PATCH fails, skip this GET.
+9. Writes `./output/<project>/changes.md` once, after step 8, or after the failed PATCH when step 8 is skipped. Do not write this file earlier, and do not append a second time. The file contains:
+   - matched, unmatched, and skipped-Done counts
+   - every task whose note or status actually changes
+   - the PATCH response status
+   - `assessmentScore` and `bestPracticeScore` as old → new. Old values come from `./output/<project>/config.csv`. New values come from the second GET. On PATCH failure, include the PATCH status and omit the new scores.
 
 Use Node built-in `fetch` and a simple inline CSV parser (no external deps). Set `ASSESSMENT_ID` and `AUTH_TOKEN` from the values the user provided. Extract other custom headers as constants at the top.

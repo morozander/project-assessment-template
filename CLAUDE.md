@@ -55,7 +55,7 @@ After the assessment CSV is filled, the `update-assessment-dashboard` skill gene
 4. Skips `note` and `implementationStatus` updates when the existing task is already `"Done"`
 5. PATCHes the API with updated `note` and `implementationStatus` for the remaining tasks
 
-To use this skill, paste the project-specific GET and PATCH curl commands into the prompts when the skill asks for them.
+To use this skill, provide the assessment id and Bearer token when asked. Ignore the sample assessment id and bearer token in the skill's curl examples.
 
 ## Important Notes
 
