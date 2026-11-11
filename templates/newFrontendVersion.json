@@ -1,0 +1,984 @@
+[
+  {
+    "title": "Kick-off",
+    "position": 0,
+    "tasks": [
+      {
+        "body": "Create stakeholder register (by PM)",
+        "description": "Identify the key client-side stakeholders and internal team members and record them in a single register the team actually uses. DONE only if: a register exists in the project space listing both client and internal people with role, decision authority, and contact channel; it covers the people the team really escalates to (cross-check against recent meetings and threads); and it names who signs off on scope and release decisions.",
+        "risk": "Without a clear map of who on the client side decides what, the team wastes days chasing the right approver, receives conflicting instructions from different people, and important updates never reach the one person who could have acted on them. Each of these translates directly into stalled work and missed dates.",
+        "position": 0,
+        "comments": []
+      },
+      {
+        "body": "Define client communication channel (by PM)",
+        "description": "Agree and document one official channel for client correspondence so requests and decisions live in a single accountable place. DONE only if: the channel (e.g. Slack Connect, email) is named in project documentation together with what counts as an official request; the client contacts from the stakeholder register are present in it; and a spot-check shows recent scope and priority decisions recorded there rather than in personal DMs.",
+        "risk": "When requests and decisions arrive through personal chats and scattered mailboxes, some get lost and work is done that was never properly agreed. And when a disagreement later arises about scope, priorities, or cost, there is no single record to settle it - misunderstandings turn into disputes about who pays for the extra work.",
+        "position": 1,
+        "comments": []
+      },
+      {
+        "body": "Define internal response times and escalation",
+        "description": "Agree how fast the team answers each other and who a blocker is raised to when it is not moving. DONE only if: the internal channel is named in the project space; expected response times and the escalation path (who, after how long, to whom) are written down; a spot-check of a recent blocker shows it was raised on that path rather than only in a private chat.",
+        "risk": "When nobody knows how quickly a question should be answered, or who to call when it is stuck, blockers sit in side chats until a deadline is already missed. The work then restarts under pressure, with the client hearing about the delay only after the date has slipped.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "Set up FE communication channel & recurring FE sync (by PM or TL)",
+        "description": "Give frontend developers a dedicated channel and a recurring sync to align on UI structure, shared components, and technical blockers before they diverge. DONE only if: the channel exists with every FE developer in it and shows real technical discussion; a recurring FE sync is on the calendar with an agreed cadence; and decisions from it (component APIs, routing, state approach) are traceable in notes or channel history. Applies only if the project has more than one FE developer; applicability is declared at kickoff.",
+        "risk": "Without a regular place for the developers to align, two people can unknowingly build the same screen twice, or build pieces that turn out not to fit together. The mismatch is discovered late, when fixing it is at its most expensive, and the schedule absorbs the cost.",
+        "position": 3,
+        "comments": []
+      },
+      {
+        "body": "Compare WBS with team commitment (by PM)",
+        "description": "Check the Work Breakdown Structure against what the team can actually deliver before anyone commits to dates. DONE only if: the WBS is decomposed to estimable items; a documented comparison of estimates against available team capacity exists; and any mismatch was resolved on record - scope cut, timeline moved, or team extended - rather than silently absorbed.",
+        "risk": "If the plan is never checked against what the team can realistically deliver, the project starts with commitments that are impossible to keep. That gap surfaces later as missed deadlines and an exhausted team - at a point where renegotiating scope or dates is far harder and more expensive than it would have been on day one.",
+        "position": 4,
+        "comments": []
+      },
+      {
+        "body": "Choose UI platform and application skeleton",
+        "description": "Start the client from a deliberately chosen platform and starter, not an ad-hoc skeleton. DONE only if: the UI platform (web SPA, SSR or server components, React Native, or another) and the starter or boilerplate are recorded together with the reasons; the repository demonstrably descends from that starter (structure and baseline configs match), or every deviation is written down; anything the starter lacked - lint, test, CI scaffolding - was consciously added rather than left out.",
+        "risk": "A carelessly chosen technical foundation is like building on the wrong plot of land: months in, the interface cannot handle the product's real navigation, rendering, or release model, and parts of it have to be rebuilt. An hour of comparison at the start turns into weeks of unplanned rework later.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778180/Boilerplates",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Define branching model (branching, commit naming, tagging rules)",
+        "description": "Define the branching model together with branch naming, commit message, and tagging rules in one place. DONE only if: a single document states the model (GitFlow, trunk-based, etc.) plus branch, commit, and tag conventions, including how release tags and versions are named; and the repository history actually follows it - spot-checked branch names, commit messages, and release tags match the documented rules. Machine enforcement of these rules is graded separately under the Conventions gate in Delivery Workflow and Environments.",
+        "risk": "Without agreed rules for how developers combine their work, changes overwrite each other during release preparation, and nobody can say with certainty which version of the interface customers are actually using. Every urgent fix then becomes a gamble that can make an incident worse instead of better.",
+        "position": 6,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778142/Contribution+Guidelines#ContributionGuidelines-DevelopmentWorkflow",
+            "type": "LINK"
+          },
+          {
+            "comment": "https://semver.org/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Integrate repository with Jira",
+        "description": "Connect the repository to Jira so branches, commits, and PRs link to tickets automatically. DONE only if: the integration is installed and active; recent Jira issues show linked branches, commits, and PRs in the development panel - not just an installed plugin; and commit messages carry ticket keys so any code change traces back to its requirement.",
+        "risk": "When code changes are not automatically linked to the tasks that requested them, the project board stops reflecting reality - managers report progress that does not match what was truly delivered. Later, working out which change caused a problem, or proving a requirement was actually built, becomes slow manual detective work.",
+        "position": 7,
+        "comments": []
+      },
+      {
+        "body": "Integrate repository with Slack",
+        "description": "Wire the repository and pipeline into the team messenger so PRs, failed builds, and deployments announce themselves. DONE only if: notifications post into an agreed channel; they cover at least PR events and pipeline failures or deployments; and recent messages in that channel prove the wiring is live, not configured-and-forgotten.",
+        "risk": "If nobody is automatically told when finished work is waiting for a colleague's check, or when a delivery step has failed, completed work sits idle for days and breakages go unnoticed until someone stumbles on them. This quiet drag adds up to visibly slower delivery every single week.",
+        "position": 8,
+        "comments": []
+      },
+      {
+        "body": "Jira workflow blocks testing until impact fields are set",
+        "description": "The board must refuse to move a ticket into testing until the developer has recorded why it changed and what it affects. DONE only if: a workflow validator is active on this project; a ticket cannot enter the testing column until root cause, affected component, and affected area are filled; a recent bug that reached testing shows those fields populated, or a blocked transition demonstrates the validator.",
+        "risk": "Without those fields, QA and the next developer cannot tell which part of the product a defect touched. The same class of bug is then retested blindly, regressions slip into release, and impact analysis after an incident starts from an empty ticket.",
+        "position": 9,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/display/QAD/Jira+workflow+for+impact+analysis",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Identify estimation approach",
+        "description": "Select one estimation method and use it. DONE only if: the method (story points, t-shirt sizing, or hours) is named in the project space; the board or ticket template matches that method; recent estimated tickets were estimated with it rather than a mix of unspoken schemes.",
+        "risk": "When every person estimates in a different unit, the plan cannot be compared with capacity and the commitment check becomes theater. Dates are then promised from numbers that do not mean the same thing to the people who have to deliver them.",
+        "position": 10,
+        "comments": []
+      },
+      {
+        "body": "IDE setup (plugins, formatting, shared configs)",
+        "description": "Make uniform editor behavior a property of the repository, not of individual machines - personal IDE settings cannot be audited, committed artifacts can. DONE only if: shared editor and formatter configuration is committed (.editorconfig plus the formatter and linter configs the IDEs consume, such as Prettier, Biome, or ESLint); a recommended plugin or extension list is committed or documented (for example .vscode/extensions.json covering the linter and SonarQube for IDE); and recent diffs show no formatting or style drift between authors. In-editor vulnerability hints may be in that plugin list; the scan that actually gates delivery is graded under Security and Compliance.",
+        "risk": "When every developer's tools style the code slightly differently, colleagues checking each other's work spend their time on cosmetic differences instead of real mistakes. Reviews take longer, avoidable defects slip through, and every change costs a little more than it should.",
+        "position": 11,
+        "comments": [
+          {
+            "comment": "https://docs.sonarsource.com/sonarqube-for-vs-code",
+            "type": "LINK"
+          },
+          {
+            "comment": "https://prettier.io/docs/editors",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Configure package registry",
+        "description": "Configure the package registries the project depends on and make accidental publication of internal code impossible. DONE only if: registry configuration (.npmrc or the stack's equivalent) is committed or documented so any developer and CI can resolve every dependency, private ones included; registry credentials are injected at build time, never committed; and internal packages are explicitly marked private or scoped to the internal registry ('private': true, publishConfig, or the stack's equivalent). Applies only if the frontend consumes or publishes private packages; applicability is declared at kickoff.",
+        "risk": "New team members and the automated delivery process can grind to a halt because they cannot access the building blocks the project depends on - days lost on setup instead of delivery. Worse, without the right safeguards a single careless command can publish the client's private code to the public internet, where it can never be fully taken back.",
+        "position": 12,
+        "comments": []
+      },
+      {
+        "body": "Cursor usage at or above the stream average",
+        "description": "Usage of Cursor is compared with the stream, not asserted. DONE only if: the internal Geniusee dashboard built on the Cursor Analytics API shows each FE engineer on the project at or above the stream benchmark for the assessment window, or a written exception names who is below and why. Applies only if Cursor is the agreed assistant for this project; applicability is declared at kickoff.",
+        "risk": "If the team is far below the stream's use of the assistant the company has standardized, delivery misses the speed and consistency that the rest of the stream already gets from shared rules and review. The gap shows up later as slower changes and more uneven code, with no record of why this project opted out.",
+        "position": 13,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "Delivery Workflow and Environments",
+    "position": 1,
+    "tasks": [
+      {
+        "body": "Local environment runs from a clean checkout",
+        "description": "A new developer must get a running app from a clean checkout using the documented commands, and that setup must resemble the target environment. DONE only if: the README or a doc it links states prerequisites and the commands that take a fresh clone to a running app; those steps include every required manual action (no tribal knowledge); when the app needs backing services, a compose file or equivalent starts them and its major versions match non-production. Docker Compose itself is not required for a static client that has no local backing services.",
+        "risk": "Every new developer loses days of paid time just getting set up before they can do useful work, and because each person's setup differs from the released app, the team regularly burns hours chasing problems that only exist on one machine - or misses ones that will surface in front of real users.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778197/READme+Template",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "AI tooling configured (Cursor rules, spec, recon)",
+        "description": "AI coding assistants must be steered by project-specific configuration committed to the repository, not used bare. DONE only if: the repo contains AI rules files (Cursor rules, CLAUDE.md, AGENTS.md, or equivalent) that encode the project's stack, conventions, and architecture; a spec or recon workflow for AI-assisted tasks is set up and referenced in the project docs; the rules describe the codebase as it currently is, not a stale or generic template. Design-tool connections are graded separately.",
+        "risk": "AI coding tools used without project-specific guidance produce work that looks correct but doesn't fit how this interface is actually built, quietly adding bugs and inconsistency faster than people can catch them. A tool bought to speed up delivery ends up slowing it down and raising the cost of every future change.",
+        "position": 1,
+        "comments": [
+          {
+            "comment": "https://cursor.com/docs/context/rules",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Design context connected in the IDE",
+        "description": "Design context must be available where the UI is written, not only as a link someone has to go and find. DONE only if: a design source (Figma MCP or the project's equivalent) is configured for the team and documented; a developer can open the current screen's design context from the IDE without asking for an export; the connection points at the file the team is building, not an abandoned draft. Applies only if the project has a design source; applicability is declared at kickoff.",
+        "risk": "When the design lives in a file the IDE cannot see, screens are built from memory and screenshots. The mismatch is found in review or, worse, by the client, and the same screens are rebuilt after the layout, spacing, and states were already implemented once.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "AI-assisted review on pull requests",
+        "description": "An automated reviewer must look at pull requests for defects, security, and project standards, in addition to the human review. DONE only if: an AI review tool runs on pull requests; recent PRs show its comments in the review thread; findings are resolved or explicitly dismissed rather than ignored while merges continue. Local assistant rules are graded separately and do not satisfy this task.",
+        "risk": "Without a second, automatic pass on each change, defects that a checklist would have caught wait for a human who is rushed. They reach the released interface, and the team pays for them as production bugs instead of as review comments.",
+        "position": 3,
+        "comments": []
+      },
+      {
+        "body": "Code review process & policies",
+        "description": "Every change reaches the main branches only through a reviewed pull request, and the review rules are explicit rather than tribal. DONE only if: branch protection requires the agreed number of approving reviews plus green CI before merge, with direct pushes to protected branches blocked; review expectations are documented, including that code discussion which changes the diff stays on the PR rather than in private chats; recent merged PRs show real review activity - comments and change requests exist, and PRs are not routinely self-approved or merged unreviewed.",
+        "risk": "Changes can reach the live interface without a second person ever looking at them, so mistakes a colleague would have caught in minutes go straight to users - and product quality depends entirely on each developer's discipline on any given day.",
+        "position": 4,
+        "comments": [
+          {
+            "comment": "https://google.github.io/eng-practices/review/reviewer/comments.html",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Conventions gate: linting, formatting, commit rules enforced",
+        "description": "Coding standards count only when a machine enforces them. DONE only if: linter and formatter configurations are committed to the repository; they run automatically via pre-commit hooks and/or a blocking CI step that fails on violations (warn-only does not count); commit messages are validated against the agreed convention (commitlint or equivalent); the current codebase actually passes the gate.",
+        "risk": "Standards that no machine enforces fade within weeks: the codebase becomes inconsistent and harder to read, every future change takes longer and costs more, and the change history stops explaining what was done and why - exactly the information needed when something breaks and the cause must be found fast.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778135/Node+Best+Practices",
+            "type": "LINK"
+          },
+          {
+            "comment": "https://www.conventionalcommits.org/en/v1.0.0/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "CI pipeline builds and tests every change",
+        "description": "Build and tests run on the pipeline for every change, not on a developer's machine. DONE only if: the pipeline definition lives in the repository; every push or pull request triggers install, build, and the test suite; recent run history is green - a pipeline that has been red or skipped for weeks scores as absent. Deployment is graded by its own task.",
+        "risk": "If the build and tests are not run automatically on each change, a broken interface can be merged because it happened to work on one laptop. The failure is then found in release, or by users, when several changes have to be untangled at once.",
+        "position": 6,
+        "comments": []
+      },
+      {
+        "body": "Deployment pipeline to staging and production",
+        "description": "Shipping the built app is a pipeline action, not a folder copied by hand. DONE only if: the same pipeline that builds the app can deploy it; at least one non-production environment is deployed from that pipeline; production is deployed from retained pipeline artifacts rather than a rebuild on a laptop; recent deployment runs exist in the history. Rollback and staged rollout are graded separately.",
+        "risk": "Releasing new versions depends on someone performing manual steps by hand, so an urgent fix takes hours instead of minutes to reach users, and every release carries a real chance of a human mistake taking the interface down.",
+        "position": 7,
+        "comments": []
+      },
+      {
+        "body": "Release management instructions",
+        "description": "The path from merged code to production must be written down, not carried in one person's head. DONE only if: a release document lists every environment with its details, the step-by-step release procedure, and the responsible person or role for each step; the document matches how the pipeline currently works - stale instructions score as absent. Rollback is assessed by its own task, not here.",
+        "risk": "If the release steps live only in one person's head, the company cannot ship updates - including urgent fixes - while that person is on vacation, sick, or gone, and anyone forced to improvise in their place risks breaking the live system.",
+        "position": 8,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/display/QAD/Release+managemment+instruction+example",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Rollback strategy implemented and tested",
+        "description": "When a release goes bad, the team must be able to return to the previous stable frontend quickly - and the mechanism must be proven, not theoretical. DONE only if: the rollback procedure is documented and scripted or automated; previous release artifacts are retained and redeployable; there is evidence the rollback has been exercised at least once (a drill or a real incident). If this repository also owns data migrations, irreversible migrations have a stated forward-fix plan; otherwise that clause is not applicable and is declared as such.",
+        "risk": "If an update goes wrong, there is no proven way to return to the last working version: the team has to improvise live and under pressure, and an ordinary bad release turns into hours or days of the interface being unavailable or wrong for every user.",
+        "position": 9,
+        "comments": []
+      },
+      {
+        "body": "Safe deployment strategy",
+        "description": "Production deployments must deliberately limit how many users a bad build can hit. Preview, canary, blue/green, or a staged percentage rollout are all acceptable. DONE only if: the chosen strategy is named and documented; the deployment configuration demonstrably implements it; a failed smoke check, health check, or error-rate guard halts or reverts the rollout instead of replacing the whole audience with a broken build.",
+        "risk": "Every update reaches all users at once, so a faulty release hits the entire customer base instantly instead of a small test group - and even a routine, healthy release can mean a visible outage window each time.",
+        "position": 10,
+        "comments": []
+      },
+      {
+        "body": "Environment configuration via env vars",
+        "description": "Application configuration comes from environment variables or a config service, with a separate and complete set per environment. DONE only if: no environment-specific values (URLs, hostnames, feature flags, public keys that differ per environment) are hardcoded in the codebase; every environment - dev and test or stage included, not only production - has its own full config set with no silent fallback to another environment's values; required variables are documented and kept current (for example .env.example). Secret storage itself, and what is allowed to appear in the client bundle, are assessed under Security and Compliance.",
+        "risk": "A mix-up between test and live settings can make a test run touch the real system - sending real emails, moving real money, or showing real customer data - and this kind of incident is typically discovered only after the damage is done.",
+        "position": 11,
+        "comments": [
+          {
+            "comment": "https://12factor.net/config",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Code ownership & reviewer rotation",
+        "description": "Knowledge of each area of the UI must not concentrate in a single head, and review duty must circulate. DONE only if: ownership is explicit (CODEOWNERS or a documented owner map covering the main features); recent PR history shows multiple distinct reviewers rather than one person approving everything; every critical area has at least two people who have recently written or reviewed code in it. Applies only if the project has more than one FE developer; applicability is declared at kickoff.",
+        "risk": "If only one person understands a critical part of the interface, all work on it stops the day that person is on leave or resigns, leaving delivery hostage to a single employee's availability - and a lone permanent reviewer eventually waves changes through without really checking them.",
+        "position": 12,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "Architecture and Code Quality",
+    "position": 2,
+    "tasks": [
+      {
+        "body": "Composition and hooks over inheritance",
+        "description": "Shared UI behavior is reused by composition, not by subclassing components. DONE only if: cross-component behavior is extracted into hooks or plain functions; components receive what they vary by props and children; a spot-check of the largest components shows they are not extending a base component to inherit rendering or lifecycle. A legacy class component that remains is isolated and is not the pattern for new code.",
+        "risk": "Inheritance trees of components hide behavior in a parent that every child must understand. A change for one screen then breaks another, and new people copy the hierarchy instead of reusing a small hook, so the same bug is fixed in several places.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://react.dev/learn/reusing-logic-with-custom-hooks",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Module and component size & single responsibility",
+        "description": "No god components: each component, hook, and module does one job and stays within a measurable size bound. DONE only if: no component, hook, or module exceeds the agreed threshold (default: about 400 lines, and the Sonar cognitive-complexity limit per function) without a written, reviewed justification; the largest units in the codebase were actually opened and each still has a single reason to change; static-analysis output (Sonar or equivalent) shows no critical size or complexity violations.",
+        "risk": "When too much of a screen is crammed into one oversized component, every developer ends up working in the same spot at once: they block each other, delivery slows, and a change made for one feature can unexpectedly break a completely unrelated one.",
+        "position": 1,
+        "comments": []
+      },
+      {
+        "body": "No structural duplication",
+        "description": "Each piece of UI logic and each view model exists once. DONE only if: Sonar duplication density is within the agreed threshold (default <=3%), or an equivalent duplication report is attached; there is no family of copy-pasted components or hooks differing only in a few lines (spot-check similarly named files across features); there are no parallel type or model sets describing the same screen data twice.",
+        "risk": "When the same logic exists in several copied places, a bug fixed in one copy quietly lives on in the others - so customers keep hitting a problem the team already reported as fixed, and every fix costs several times what it should.",
+        "position": 2,
+        "comments": [
+          {
+            "comment": "https://docs.sonarsource.com/sonarqube-server/10.8/instance-administration/analysis-functions/quality-gates",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Dead code and unused dependencies removed",
+        "description": "Code and dependencies that nothing references are removed, not left for the next person to be afraid of. DONE only if: a dead-code tool (knip, ts-prune, depcheck, or an equivalent combination of unused-export lint and a dependency check) reports unused files, exports, and dependencies; the run is in CI or recorded as an assessment artifact; findings are zero, or each finding has a ticket; a spot-check finds no unreachable routes, screens, or feature flags. Speculative abstractions and unused extension points are graded under KISS, not here.",
+        "risk": "Unused screens, exports, and libraries still have to be understood, bundled, and upgraded. They hide the path users actually take, inflate the download, and make every dependency bump riskier because nobody knows which of the dead parts a change might wake up.",
+        "position": 3,
+        "comments": [
+          {
+            "comment": "https://knip.dev/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Dependency direction & coupling",
+        "description": "Features depend on shared code, not on each other's internals. DONE only if: a module-dependency check (madge, or a manual import review of the feature folders) shows no cycles between features; no feature imports another feature's private modules, store, or API helper; shared UI and utilities live in an explicit shared place rather than in sideways imports. Separation of rendering from domain rules is graded by its own task.",
+        "risk": "When every screen reaches into every other screen's files, fixing one flow routinely breaks another. The team ends up spending more time repairing side effects than delivering new work, and eventually becomes afraid to change anything at all.",
+        "position": 4,
+        "comments": []
+      },
+      {
+        "body": "Effect, subscription, and request lifecycle",
+        "description": "Everything the UI subscribes to, it also releases. DONE only if: effects that subscribe, start timers, or attach listeners return a cleanup; in-flight requests are aborted or their results ignored after the owner unmounts; a search for subscriptions, intervals, and listeners finds a matching disposal on the same lifecycle; no store subscription is created during render without a way to stop it.",
+        "risk": "Forgotten subscriptions and timers keep running after the user has left the screen. The interface grows slower and stranger the longer a session lasts, and bugs show up as leaks or stale updates that are hard to reproduce in a short test.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://react.dev/learn/synchronizing-with-effects",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "KISS: no over-engineering",
+        "description": "Complexity must be bought by a real need, not by 'we might need it later'. DONE only if: abstractions (generic wrappers, plugin mechanisms, configuration layers) have at least two real implementations or a concrete, documented upcoming need; reading the code surfaces no dead configurability, unused extension points, or speculative generality; straightforward problems are solved with the stack's idiomatic, straightforward tools. Unused files and dependencies are graded under the dead-code task, not here.",
+        "risk": "Machinery built 'just in case' never pays off but must be maintained forever: every small change costs more than it should, new team members take far longer to become productive, and budget goes into upkeep instead of the features the business actually asked for.",
+        "position": 6,
+        "comments": []
+      },
+      {
+        "body": "Expedient use of variation patterns",
+        "description": "Patterns are applied where they genuinely solve a recurring variation, in a form idiomatic to the UI stack - and not forced where a plain component would do. DONE only if: recurring variation (several payment providers, several field types, several notification renderers) is handled through a recognizable approach (strategy, factory, registry, or composition) rather than a growing chain of conditions; every pattern found in the code is justified by an actual need, with no pattern-for-pattern's-sake scaffolding such as a factory over a single implementation.",
+        "risk": "Every time the business wants to add a new option - a new payment provider, a new kind of field - developers must hand-edit many scattered conditions instead of plugging the addition into one place, so simple additions take weeks instead of days and each one risks breaking something that already worked.",
+        "position": 7,
+        "comments": [
+          {
+            "comment": "https://refactoring.guru/design-patterns",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "UI separated from domain and side effects",
+        "description": "Rendering is graded on what the code does, because folder names alone are not evidence. DONE only if: components spot-checked on the main flows render from data they are given and do not embed endpoint URLs, payload mapping, and business rules inline in the markup; fetching and mutations live in a dedicated hook or module; where the project claims feature slices, the code for a feature is co-located. A thin client with no separate domain layer passes when that boundary is the recorded decision and the components still do not own the request details.",
+        "risk": "The project can look well organized on the surface while its rules for pricing, permissions, or form flow are tangled into the markup - so changing a rule becomes slow and risky, and mistakes in those rules are hard to catch before customers see them.",
+        "position": 8,
+        "comments": [
+          {
+            "comment": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Libraries: modern, one per job, kept current",
+        "description": "Dependencies are maintained, justified, not duplicated, and kept current. DONE only if: every significant dependency is actively maintained (no archived or deprecated project on a critical path), or its choice is explicitly argued in an ADR or docs; each job (forms, dates, client cache, UI primitives, routing) uses one library unless a written exception names the second and the boundary; update activity is visible in history - merged Renovate or Dependabot PRs, or a recurring update task - and no critical dependency sits more than one major version behind without a documented plan; a major bump is shown to have checked peer dependencies and the production build, not only the version number.",
+        "risk": "When the outside software the interface is built on is abandoned, duplicated, or left badly out of date, its known problems and security holes will never be fixed - and catching up later turns into a large, expensive, risky project of its own instead of routine maintenance.",
+        "position": 9,
+        "comments": [
+          {
+            "comment": "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Framework, Node, and TypeScript versions supported",
+        "description": "The UI framework, the Node or toolchain version used to build it, and TypeScript when it is used, are inside their support windows, and upgrades are planned rather than deferred until forced. DONE only if: the framework major and the build runtime are currently supported (not end-of-life); TypeScript, if present, is a supported major; for any version approaching end of life, a migration task exists in the backlog scheduled before that date.",
+        "risk": "Once the foundation the interface is built and shipped with passes its end-of-support date, security fixes for it simply stop arriving, leaving known holes open. The only way out is then a rushed, high-risk upgrade at the worst possible moment - often forced by an urgent security problem.",
+        "position": 10,
+        "comments": [
+          {
+            "comment": "https://nodejs.org/en/about/previous-releases",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "TypeScript strict and typecheck in CI",
+        "description": "New UI code is typed, and the types are checked by the pipeline. DONE only if: new code is TypeScript, with any remaining JavaScript bounded by a written exception; strict mode, or a documented setting at least as strict, is enabled; CI runs the typecheck (tsc --noEmit or the project's equivalent) and fails the change when types fail. A project that has declared at kickoff that it will not use TypeScript fails this task rather than skipping it, unless that decision is an explicit, recorded exception with an owner.",
+        "risk": "Without a typecheck that can fail the build, wrong props and wrong payload shapes compile and ship. The user sees a broken screen, and the team finds the mismatch in production instead of at the moment the change was made.",
+        "position": 11,
+        "comments": [
+          {
+            "comment": "https://www.typescriptlang.org/tsconfig/#strict",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Route-level code splitting and tree-shaking",
+        "description": "The first load does not download every screen and every library. DONE only if: routes or large screens are loaded lazily (dynamic import or the framework's equivalent); the production build tree-shakes unused exports, and a barrel file that defeats that is absent or justified; a bundle report or build-analyzer output exists for the production build and shows that the entry chunk is not the entire application. Render cost of a screen that is already loaded is graded separately.",
+        "risk": "A single oversized download makes the first view slow on ordinary networks and phones. Users leave before the product is usable, and every new screen added to the main bundle makes the next visit slower for everyone.",
+        "position": 12,
+        "comments": [
+          {
+            "comment": "https://web.dev/articles/code-splitting-suspense",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Hot-path render cost controlled",
+        "description": "The screens people actually use must not do obviously wasteful work on each interaction. DONE only if: the heaviest lists or tables virtualize or paginate rather than mounting every row; props and callbacks passed into memoized children on those paths are stable where a profile showed churn, or a written note says profiling found no problem; the main flows do not waterfall independent requests (waiting to start a call that does not depend on the previous one) unless a product reason is written down.",
+        "risk": "A screen that re-renders huge lists or waits on requests one after another feels broken even when the data is correct. Users abandon the flow, and the team discovers the cost only after the feature is already in customers' hands.",
+        "position": 13,
+        "comments": [
+          {
+            "comment": "https://react.dev/reference/react/memo",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Client request resilience (timeouts, bounded retries)",
+        "description": "No remote call may hang the screen forever or be retried into a storm. DONE only if: calls to APIs have an explicit timeout, or use a client whose default timeout is finite and known; retries are bounded, use backoff, and are not applied to mutations that are not idempotent; a request started for a screen is cancelled or its late response is discarded when the user leaves. Applies only if the app calls remote APIs; applicability is declared at kickoff.",
+        "risk": "A slow or stuck API freezes the screen for everyone using that flow, and unbounded retries make the outage worse. Users see an endless spinner, repeat the action, and the business hears about duplicate or lost operations from support rather than from the client.",
+        "position": 14,
+        "comments": []
+      },
+      {
+        "body": "Duplicate submission guarded on side effects",
+        "description": "An action with a real-world effect must not run twice because the user clicked twice. DONE only if: controls that charge, place an order, or otherwise cause a side effect are disabled, locked while in flight, or send an idempotency key; the guard is visible in the code of those flows, not only in a button style; a second submit while the first is unresolved does not fire a second request. Applies only if the UI triggers side-effectful operations such as payments or orders; applicability is declared at kickoff.",
+        "risk": "An ordinary double click can charge a customer twice or place two orders. The business learns about it through refunds and complaints, because the interface itself treated both clicks as intentional.",
+        "position": 15,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "UI kit and accessibility",
+    "position": 3,
+    "tasks": [
+      {
+        "body": "UI primitives come from one kit",
+        "description": "Buttons, inputs, and the other primitives come from one kit, whether that kit is built here or adopted. DONE only if: those primitives are imported from a single library or package; recent screens do not introduce a second button, input, or dialog for the same job; a spot-check of new UI shows the kit in use rather than raw one-off controls.",
+        "risk": "Two buttons that look alike and behave differently teach every developer to guess. Screens drift apart, a fix to one control never reaches the other, and the product stops looking like one product.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://ui.shadcn.com/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Components customized through props and variants",
+        "description": "A component is varied through its public API, not by copying it. DONE only if: visual and behavioral variants are props or the kit's variant API, not forked components and not inheritance; the same prop names mean the same thing across the primitives; a spot-check shows no one-off copy of a control that differs only by color or size.",
+        "risk": "Copied controls drift. A later fix for focus, error text, or disabled state lands in one copy and not the others, so users hit a broken field on one screen that was already repaired on another.",
+        "position": 1,
+        "comments": []
+      },
+      {
+        "body": "Theme or design tokens are the source of visual values",
+        "description": "Shared color, spacing, and type have one source. DONE only if: those values live in a theme or token module that the kit reads; a spot-check of kit components shows them using those tokens; raw color and magic spacing inside feature screens are exceptional and called out, not the default way to style a new screen.",
+        "risk": "When every screen hard-codes its own colors and spacing, a brand or theme change becomes a hunt through the whole app. Inconsistent values also fail contrast and layout checks one screen at a time, after users have already seen them.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "Stories document props, variants, and states",
+        "description": "The kit's examples are generated from the components and stay current. DONE only if: Storybook or an equivalent catalog exists; stories show props, usage, and variants, including loading, empty, and error where the component has them; a spot-check of a recently changed component shows its story updated with the component. A story that still renders an old API does not pass.",
+        "risk": "Without a living catalog, every new screen re-discovers how a component is meant to be used, and wrong guesses ship as one-off props. Designers and developers then argue from screenshots instead of from the component's actual states.",
+        "position": 3,
+        "comments": [
+          {
+            "comment": "https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Kit components meet accessibility basics",
+        "description": "A primitive is not done if it cannot be used without a pointer or if its name is wrong. DONE only if: interactive kit components have an accessible name, a correct role, and keyboard operation; focus order inside composite widgets (menus, dialogs, lists) is intentional and visible; for a native platform, hit target size is part of the same review. The native hit-target clause applies only if the platform is native; applicability is declared at kickoff. Automated checks are a separate task.",
+        "risk": "Controls that only work with a mouse, or that a screen reader names incorrectly, shut people out of the product and fail procurement checks. Fixing them later means revisiting every screen that copied the broken control.",
+        "position": 4,
+        "comments": [
+          {
+            "comment": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_accessibility",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Automated accessibility checks run",
+        "description": "Accessibility rules are executed, not only written down. DONE only if: eslint-plugin-jsx-a11y, axe, Storybook a11y, or an equivalent runs in CI or in the story suite; the latest run is green, or each failure has a ticket; the check covers the kit or the main screens rather than a single demo. Manual review of names and focus is graded separately and does not replace this run.",
+        "risk": "A guideline nobody runs is forgotten on the next component. Inaccessible controls then spread through every screen that reuses them, and the first systematic finding arrives from an audit or a blocked customer rather than from the pipeline.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Expensive kit components document their render limits",
+        "description": "Kit pieces that can get large say how they stay cheap, and the code matches the note. DONE only if: lists, tables, editors, or other expensive kit components document how they avoid extra work (virtualization, memoization, stable callbacks); the note matches the implementation; a component documented as safe that still mounts an unbounded collection of children does not pass. Application-level code splitting is graded under Architecture and Code Quality.",
+        "risk": "A table or list from the kit that mounts every row will freeze the screens that adopt it. Because the cost is inside the shared component, every feature that uses it inherits the freeze, and the team looks for the bug in the feature instead of in the kit.",
+        "position": 6,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "State and server cache",
+    "position": 4,
+    "tasks": [
+      {
+        "body": "Server state and UI state use different mechanisms",
+        "description": "Remote data and local interaction state are not stored as if they were the same kind of thing. DONE only if: data from the server is held by a server-cache tool or a documented fetch layer with an explicit cache; local UI state (open panels, wizard step, unsent form input) is not written into that cache as if it were server data; the split is visible in the code of the main screens.",
+        "risk": "When server records and fleeting UI flags share one pile, a refetch wipes what the user was doing, or a local flag is treated as saved. Users lose input, or see a success state for a change the server never accepted.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://tanstack.com/query/latest/docs/framework/react/overview",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Cache holds only what screens render",
+        "description": "The client cache stores the data the screens use, not a spare copy of the API. DONE only if: cached payloads are the fields the UI renders, or a written reason explains a wider payload; paginated screens do not retain the entire collection in memory; a spot-check of cache keys shows no unused dump kept 'just in case'. How that cache is invalidated is graded separately.",
+        "risk": "Oversized client caches slow low-end devices and keep personal fields the screen never shows. They also make it unclear which copy of a record is on screen, so a later fix updates one copy and leaves another stale.",
+        "position": 1,
+        "comments": []
+      },
+      {
+        "body": "Mutations invalidate or update the affected cache",
+        "description": "After the user changes data, the screen must not keep showing the previous value until a manual reload. DONE only if: each mutation that changes data on screen invalidates the affected keys, updates them, or refetches them; a spot-check of create, update, and delete on the main flows shows the visible data moving with the mutation; a mutation with no cache effect is either absent or written down as intentional.",
+        "risk": "Users save a change and still see the old value, so they submit again. The product looks like it ignored them, support gets reports of 'it didn't save', and duplicate writes follow from the second attempt.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "Loading, empty, and error states are explicit",
+        "description": "A screen says what it is doing when data is missing or failing. DONE only if: the main screens distinguish loading, empty, error, and success; after a failed refresh, stale data is not presented as current - it is refreshed on the agreed signal (focus, reconnect, or expiry) or visibly marked; a forced failure on one main screen shows an error state rather than a blank page or an old success.",
+        "risk": "A blank screen or a quiet old success tells the user the product is fine when it is not. They act on outdated information, or they leave, and the team has no signal that the request failed because the UI swallowed it.",
+        "position": 3,
+        "comments": []
+      },
+      {
+        "body": "State updates are immutable",
+        "description": "State is replaced, not edited in place. DONE only if: store updates, reducers, and set-state calls return new objects and arrays; a spot-check of the main stores shows no in-place mutation of a value that is then kept as state; a lint rule against that mutation is on, or the spot-check found none.",
+        "risk": "In-place edits make the screen skip updates or show a mix of old and new values, because the renderer never saw a new reference. The resulting bugs depend on timing, so they escape review and reach users as data that 'sometimes' doesn't change.",
+        "position": 4,
+        "comments": [
+          {
+            "comment": "https://react.dev/reference/rules/components-and-hooks-must-be-pure",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Derived values are computed, not stored",
+        "description": "A value that can be calculated from state or props is calculated, not copied into state and then synchronized. DONE only if: filtered lists, totals, and labels on the main flows are computed during render or by a selector; effects whose only job is to copy one piece of state into another are absent on those flows, or each one has a written reason; the stored copy and the source cannot disagree.",
+        "risk": "Stored copies drift from the values they were derived from. The screen then shows a total, a filter, or a label that contradicts the data next to it, and every new field needs another effect to keep the copy honest.",
+        "position": 5,
+        "comments": []
+      },
+      {
+        "body": "State is colocated; context is only for shared state",
+        "description": "State sits at the lowest place that uses it, and context or a global store is reserved for state that distant parts of the tree actually share. DONE only if: a spot-check of providers and stores shows they do not hold single-screen flags; props are not drilled through several components that never use them; state used by one subtree is owned by that subtree. Using context everywhere, and refusing context where many distant readers need the same value, both fail this task.",
+        "risk": "A global store full of one screen's flags becomes a place every feature can accidentally break. Deep prop chains do the opposite: a new requirement means editing every layer in between, and a missed layer ships a stale or undefined value.",
+        "position": 6,
+        "comments": []
+      },
+      {
+        "body": "One client store and one server-cache library",
+        "description": "The client does not keep two libraries for the same job. DONE only if: there is one client-state library and one server-cache library, unless a written exception names the second and the boundary between them; imports and the dependency list show no parallel pair (two stores, or two query libraries) covering the same kind of state. Choosing which libraries are maintained at all is graded under Architecture and Code Quality.",
+        "risk": "Two caches for server data, or two global stores, will disagree about what is saved. Developers update one and not the other, users see flickering or reverted values, and removing either library later is a project of its own.",
+        "position": 7,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "Security and Compliance",
+    "position": 5,
+    "tasks": [
+      {
+        "body": "No secrets in repository or git history",
+        "description": "The repository must contain no live credentials - not in the working tree and not anywhere in git history, since a secret committed once is recoverable forever. DONE only if: a secret scanner (gitleaks, trufflehog, or platform-native secret scanning) has been run over the full git history and reports no live findings; every credential ever found in history has been rotated, not merely deleted in a later commit; scanning runs continuously (pre-commit hook, CI job, or repo-host secret scanning) so new leaks are caught at push time.",
+        "risk": "Passwords and access keys that were ever saved into the project's code remain extractable from its history forever - anyone who ever receives a copy, including former contractors, can use them to reach the live system, and such leaks are usually discovered only after someone has already abused them.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://github.com/gitleaks/gitleaks",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Secrets in config are references, not literals",
+        "description": "From the code's perspective, secrets must live outside the codebase: configuration files carry references, and real values arrive from the environment at runtime. DONE only if: committed config files contain no plaintext credentials for any environment; secrets are loaded via environment variables or a secret-store client through the config layer; .env and similar local-secret files are git-ignored with only a placeholder .env.example committed; per-environment configs are separated so production values never appear in dev or test files. What the browser is allowed to receive is graded separately.",
+        "risk": "Passwords written directly into project files travel with every copy of the code, giving anyone who sees them direct access to servers and client data. Mixed-up environment settings can also cause test activity to hit the real live system, affecting real customers.",
+        "position": 1,
+        "comments": []
+      },
+      {
+        "body": "No private secrets in the client bundle",
+        "description": "Anything shipped to the browser or the device is public. DONE only if: a production build or env review shows no private API keys, service credentials, or signing secrets in the bundle; variables prefixed for public exposure (NEXT_PUBLIC_, VITE_, or the stack's equivalent) contain only values that are safe to publish; a spot-check of the built assets finds none of those secrets. Server-only secrets staying out of git is a separate task.",
+        "risk": "A key that ships in the JavaScript bundle can be read by anyone who loads the page. It is then used as if it were a server credential - against billing, storage, or admin APIs - and rotating it means a new release plus a race with copies already downloaded.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "No tokens or personal data in browser storage",
+        "description": "Persistent browser storage is not a place for credentials or personal data. DONE only if: localStorage, sessionStorage, IndexedDB, and AsyncStorage (when the platform has it) do not hold access tokens, refresh tokens, or personal data; where a token must live on the client, the choice (httpOnly cookie or the platform secure store) is documented and matches the code; a search of storage writes on the auth flow confirms the restriction. Non-sensitive preferences may be stored.",
+        "risk": "Tokens and personal data left in browser storage are readable by any script that runs on the page and by anyone with access to the device. A single cross-site scripting bug, or a shared computer, then becomes account takeover rather than a defaced screen.",
+        "position": 3,
+        "comments": [
+          {
+            "comment": "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "XSS-safe rendering",
+        "description": "User-controlled content is rendered as text, not as HTML or script, unless it has been sanitized by a known library. DONE only if: a search shows no eval, new Function, or unsanitized dangerouslySetInnerHTML (or the native equivalent) on user or CMS content; where HTML must be rendered, a sanitizer is applied and the allowed tags are limited; URL and style inputs cannot carry a javascript: or expression payload. Static-analysis findings for injection are graded with the CI security scan.",
+        "risk": "One injection point is enough for an attacker to run script as the user: read what is on screen, act as them, or load further code. The damage looks like normal use of the account, so it is noticed late, often by the customer.",
+        "position": 4,
+        "comments": [
+          {
+            "comment": "https://owasp.org/www-community/attacks/xss/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Content Security Policy enforced",
+        "description": "A Content Security Policy restricts where scripts, styles, and connections may come from. DONE only if: a CSP is sent on the deployed app (header or meta, confirmed on a real environment, not only in a sample config); it does not rely on unsafe-inline or unsafe-eval for scripts unless a written exception lists the nonce or hash approach and the remaining gap; a spot-check shows the policy is the one production serves. Framing and referrer policies are separate tasks.",
+        "risk": "Without a policy, any injected script can load further code from anywhere and send data out. The policy is the control that limits that blast even when a single injection bug exists, and its absence is visible to anyone who reads the response headers.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Framing protection enabled",
+        "description": "The deployed app must not be embeddable in someone else's frame. DONE only if: production responses send frame-ancestors in CSP, or X-Frame-Options, and the value is not a wildcard; the auditor has seen the header on the real origin, not only in a commented config; pages that must be embedded are an explicit allow-list with a written reason.",
+        "risk": "A page that can be framed can be overlaid with a fake interface while the user believes they are clicking the real product. Payments, approvals, and account changes are then captured by the framing site.",
+        "position": 6,
+        "comments": []
+      },
+      {
+        "body": "Referrer-Policy set",
+        "description": "The browser must not leak full URLs, including tokens in paths or queries, to other sites. DONE only if: production responses send a Referrer-Policy; the value is restrictive (no-referrer, same-origin, or strict-origin-when-cross-origin, or stricter); the auditor has seen the header on the deployed origin. Other security headers do not satisfy this task.",
+        "risk": "A full URL sent as a referrer can hand a session identifier or a private path to a third-party script or to the next site the user opens. That leak is silent: the user did nothing wrong, and the token is simply now somewhere else.",
+        "position": 7,
+        "comments": [
+          {
+            "comment": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Referrer_policy",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Session handling fails closed",
+        "description": "An expired, missing, or rejected session must send the user to an unauthenticated state, not leave them looking signed in. DONE only if: protected screens do not render private data before the session is accepted; a failed refresh or a 401 clears the local session and shows the signed-out flow; logout removes the credential the client held. The storage location of that credential is graded separately.",
+        "risk": "If a dead session still shows private screens, the next person on the device sees someone else's data. If logout does not clear the credential, a 'signed out' user is still authenticated to the API, and a stolen device stays logged in.",
+        "position": 8,
+        "comments": []
+      },
+      {
+        "body": "No debug surfaces in production",
+        "description": "Debug aids that are useful in development must be unreachable on the production origin. DONE only if: production does not serve publicly downloadable source maps that reconstruct the original source (uploaded maps for the error tracker do not count as public); Storybook, dev-only routers, and verbose error overlays are absent from the production build; a check of the deployed origin confirms this, not only the default framework flag. User-facing error copy is graded separately.",
+        "risk": "Public source maps and a production Storybook hand an outsider the original structure of the app, and a verbose overlay shows internal paths and data. Both shorten the time from a curious visitor to a working exploit.",
+        "position": 9,
+        "comments": []
+      },
+      {
+        "body": "User-facing errors stay generic",
+        "description": "What the user reads when something fails must not describe the internals. DONE only if: error UI on the main flows uses a generic message plus, where useful, a correlation or support reference; stack traces, SQL, file paths, and dependency names are not rendered; a forced failure on a deployed or staging build confirms the copy. Capturing the real error for the team is graded under Observability.",
+        "risk": "A stack trace or a raw server message tells an attacker how the system is built and can include data about other users. It also leaves the real user with text they cannot act on, so the same incident becomes both a leak and a support ticket.",
+        "position": 10,
+        "comments": []
+      },
+      {
+        "body": "Automated dependency and supply-chain scans",
+        "description": "Vulnerability discovery in dependencies must be automatic and recurring, not something a human remembers to run. DONE only if: dependency scanning (Snyk, Dependabot, npm audit or pnpm audit in CI, or equivalent) runs on every build or a fixed schedule; findings surface where the team actually looks, with critical severities blocking or alerting rather than accumulating in an unread report; third-party scripts loaded by the app are included in that inventory or in the services inventory task, not ignored because they are not in package.json.",
+        "risk": "Without automatic checking, the interface keeps shipping components with publicly known security holes for months, and nobody even knows the risk is on board until someone exploits it.",
+        "position": 11,
+        "comments": []
+      },
+      {
+        "body": "Process to update compromised libraries",
+        "description": "When a vulnerability drops in a dependency, the team must react by process, not by luck. DONE only if: a documented workflow names who receives vulnerability alerts and defines a patch SLA by severity (for example criticals within days); alerting is actually wired - Dependabot, Snyk, or Renovate notifications land in a channel someone monitors; the process demonstrably ran at least once - a past advisory traceable to its upgrade ticket and release.",
+        "risk": "When a serious flaw is publicly announced in one of the ready-made components the interface is built on, attackers start exploiting it within hours; without an assigned owner and a standing routine, the team learns about the hole from the client - or from the break-in itself.",
+        "position": 12,
+        "comments": []
+      },
+      {
+        "body": "Security scans in the CI pipeline",
+        "description": "Static security analysis must run inside the delivery pipeline so every change is checked before it ships. DONE only if: SAST (Sonar security rules, Semgrep, CodeQL, or equivalent) executes on every pipeline run; findings gate the pipeline at an agreed severity - new critical findings fail the build or force explicit triage; the gate is demonstrably live, not a scanner that has been red or muted for months while merges continue.",
+        "risk": "Each new release can introduce a fresh security hole with no one checking before it goes live - the problem then surfaces only after the system has already been broken into, when fixing it is at its most expensive and most public.",
+        "position": 13,
+        "comments": [
+          {
+            "comment": "https://docs.sonarsource.com/sonarqube-server/user-guide/security-hotspots",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Third-party frontend services inventoried and owned by the organization",
+        "description": "Every external service the client loads or calls must be inventoried, owned correctly, and confirmed fit. DONE only if: an inventory exists (analytics, error tracking, feature flags, CMS, maps, tag managers, and similar) naming the account owner, the plan, and test-versus-live separation; each account belongs to the client's or company's organization, not an engineer's personal email; scripts from those services are loaded from an expected origin. Any service that is deprecated, surprisingly expensive, or personally owned is recorded in the risk register.",
+        "risk": "The product may quietly depend on a script or account registered to someone who already left, or on a vendor that is about to shut the plan down. A tag that nobody owns can also be changed out from under the team and start collecting user data the client never agreed to.",
+        "position": 14,
+        "comments": []
+      },
+      {
+        "body": "FE engineer least-privilege check",
+        "description": "Verify concretely that frontend engineers hold no more access than their current work requires, across every system the project touches. DONE only if: the audit enumerates the FE engineers' actual grants in the repo host, hosting, error tracking, design tools, and other third-party consoles, and each grant maps to a present need; no admin or owner roles where write or read suffices, and no personal long-lived production keys where SSO or a role exists; recently offboarded members are confirmed absent from all of the above.",
+        "risk": "Access handed out person-by-person and never reviewed means people who left the team can still reach live systems months later, and a single stolen developer account can turn into control of the hosting account, the error tracker, and the design source.",
+        "position": 15,
+        "comments": []
+      },
+      {
+        "body": "Open-source licensing compliance",
+        "description": "Every shipped dependency's license must be verified compatible with commercial, closed-source use. DONE only if: an automated license scan (license-checker, Snyk, or equivalent) runs in CI or at each release; no copyleft-incompatible dependencies (GPL or AGPL family) are present in shipped code without explicit documented sign-off; a current license inventory is stored with the project docs and refreshed each release.",
+        "risk": "A single ready-made component with the wrong license terms can trigger a lawsuit or legally force the company to give away its own product's source code for free - a business-level consequence of one unchecked download.",
+        "position": 16,
+        "comments": [
+          {
+            "comment": "https://www.npmjs.com/package/license-checker",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "No PII or secrets in client logs and error reports",
+        "description": "Logs, error trackers, and traces must never carry credentials or personal data in plaintext - telemetry is the least-protected copy of production data. DONE only if: the error tracker and any client logger redact tokens, passwords, auth headers, and personal or card data (Sentry beforeSend or the tool's equivalent, confirmed in config); breadcrumbs and request bodies on sensitive flows are masked; a spot-check of a real staging or production event shows nothing sensitive. User-facing copy is a separate task.",
+        "risk": "The error tracker becomes an extra, poorly guarded copy of customer data: if it leaks or too many people can view it, that alone is a reportable data breach, and sign-in details captured there let anyone with viewing access act as real users.",
+        "position": 17,
+        "comments": []
+      },
+      {
+        "body": "HTTPS only, no mixed content",
+        "description": "The deployed client is loaded and talks to its APIs only over HTTPS. DONE only if: the production origin redirects HTTP to HTTPS; a spot-check of the built app and its main API base URLs shows no http:// endpoint and no mixed active content; HSTS is set on the production host, or a written platform limitation explains why the host cannot set it and the redirect is still in place.",
+        "risk": "A single insecure request can be read or altered on the network, including a session cookie that was not marked secure. Users on shared networks then lose the account, and the product looks healthy because the rest of the calls still use HTTPS.",
+        "position": 18,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "Testing and Quality Gates",
+    "position": 6,
+    "tasks": [
+      {
+        "body": "SonarQube connected (Geniusee self-hosted)",
+        "description": "The project's code is continuously analyzed on the Geniusee self-hosted SonarQube so that quality, duplication, complexity, and coverage exist as objective numbers - this is the evidence base several other checks in this area and in Architecture rely on. DONE only if: the project exists on the Geniusee self-hosted SonarQube instance and analysis runs automatically on merges to the main development branch (not a one-off manual scan); the analyzed branch is the branch the team actually develops on; coverage and duplication metrics are populated (a 0% or empty coverage panel from a misconfigured scanner does not pass).",
+        "risk": "Without an independent, automatic measurement of the code's health, the only source of truth is the team grading its own work - quality can quietly decline for months, and by the time it surfaces as bugs and slower delivery, there are no objective numbers to show when it started or how bad it is.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://docs.sonarsource.com/sonarqube-server/10.8/instance-administration/analysis-functions/quality-gates",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Unit and component testing framework with a fixed coverage expectation",
+        "description": "A unit and component testing framework is set up and runnable, and the company coverage expectation applies to this project as a given: 80% unless a different figure was explicitly agreed at kickoff - this is expected from everyone, it is not a per-project negotiation. DONE only if: the framework (Vitest, Jest, or the stack's equivalent) plus the UI testing library is configured in the repository with a single documented command that runs the suite locally and in CI; coverage reporting is configured and produces an actual figure; the expected threshold is written down in repo config or project docs, not agreed verbally.",
+        "risk": "If automated testing is not set up with a clear, agreed bar, verifying that things still work falls back to people manually clicking through the application - slow, incomplete, and the first thing skipped under deadline pressure - so features that used to work quietly break and reach real users.",
+        "position": 1,
+        "comments": [
+          {
+            "comment": "https://vitest.dev/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Coverage gate enforced (CI or Sonar)",
+        "description": "The coverage expectation must be machine-enforced somewhere, not aspirational: a change that drops coverage below the agreed figure must fail an automated check. DONE only if: a blocking gate exists - a CI step that fails the build, a Sonar quality gate that fails the analysis, or equivalent - configured with the agreed threshold; the auditor can point to a pipeline run or PR where the gate actually executed; the gate cannot be routinely bypassed (not marked optional or informational, no continue-on-error, no habit of merging on red).",
+        "risk": "A testing standard that nothing enforces erodes one small change at a time: months later most of the interface runs without a safety net even though no one ever decided to accept that, and breakages start reaching customers before anyone realizes the protection is gone.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "Unit and component tests owned by FE, measured",
+        "description": "Tests written and maintained by the frontend team verify UI behavior, and sufficiency is judged by the measured coverage figure against the agreed expectation - 'some tests exist' is not a pass. DONE only if: a current coverage figure is produced by the configured reporting and meets the expectation; the tests exercise real behavior (rendering, interaction, branching) rather than padding the number with snapshots and trivial renders; the tests live in the FE repository and run in the FE pipeline - suites owned by a separate QA team do not count toward this item.",
+        "risk": "If only a small fraction of the interface is genuinely tested, mistakes in the untested majority go straight to users - wrong totals, broken forms, actions that do nothing - and are typically discovered by customers rather than by the team.",
+        "position": 3,
+        "comments": []
+      },
+      {
+        "body": "Snapshot tests are narrow and reviewed",
+        "description": "Snapshots are a narrow tool for stable output, not the coverage strategy. DONE only if: snapshot tests that exist are small and aimed at output that should rarely change; snapshot diffs are reviewed in pull requests rather than bulk-updated without comment; they are not the majority of the suite's assertions. A project with no snapshots passes this task. Coverage padding via snapshots fails the FE-owned tests task even if this one passes.",
+        "risk": "Broad snapshots are updated in bulk the moment they fail, so they stop detecting regressions and still create noisy reviews. Real breaks in behavior ride along inside a snapshot refresh and reach users as 'the tests were green'.",
+        "position": 4,
+        "comments": []
+      },
+      {
+        "body": "E2E tests cover critical flows in the FE pipeline",
+        "description": "Critical flows are exercised through the real UI by tests the frontend pipeline runs. DONE only if: end-to-end tests exist for the critical flows (sign-in and the main business path, such as checkout or the core task); the tool matches the platform declared at kickoff (Playwright, Cypress, Detox, or equivalent) and that choice is recorded; they run in the FE pipeline on merge or on a schedule and the latest run is green; each covered flow maps to a named test whose failure blocks the FE pipeline. A suite owned only by a separate QA team, which does not run on FE merges, does not satisfy this item.",
+        "risk": "If a change that breaks sign-in or the main business path is not caught when it is made, it is discovered later by another team or by customers who suddenly cannot complete the one thing the product is for.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://playwright.dev/",
+            "type": "LINK"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Observability",
+    "position": 7,
+    "tasks": [
+      {
+        "body": "Client error tracking with release and source maps",
+        "description": "Client errors are captured with enough context to find the release that produced them. DONE only if: an error tracker (Sentry or equivalent) is initialized in the client for the frameworks this project actually ships; events are tagged with environment and release; source maps for that release are uploaded to the tracker so stack frames resolve to source; a recent event from a non-production or production environment demonstrates all three. Public hosting of those maps is graded under Security and Compliance and fails if the maps are world-readable.",
+        "risk": "Without a release and a readable stack, a user report cannot be tied to a build. The team searches the wrong version, the broken release stays live, and the same crash keeps arriving with no owner.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://docs.sentry.io/platforms/javascript/guides/react/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Performance signals collected and reviewed",
+        "description": "Someone can see that the interface got slower before users give up on it. DONE only if: real-user or synthetic signals (Core Web Vitals, or tracing of routes and network calls) are collected for the deployed app; a dashboard or tracker view shows them over time, not only a one-off local profile; a regression or a budget breach has a place it would be noticed (review, alert, or a recurring look at the dashboard) and a recent example or the review cadence is evident.",
+        "risk": "Nobody can see the interface getting slower until customers complain - and when they do, there is no history showing when it started or which release caused it, so the investigation drags on while people leave the flow.",
+        "position": 1,
+        "comments": [
+          {
+            "comment": "https://web.dev/articles/vitals",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Render errors and unhandled rejections are captured",
+        "description": "A crash in one screen must be reported and contained, not left as a blank page and a silent console error. DONE only if: an error boundary (or the platform's equivalent) wraps the app or each route and renders a fallback; unhandled promise rejections are sent to the error tracker; triggering a render error in a test or staging build produces both the fallback and a captured event. The words shown in that fallback are graded under Security and Compliance.",
+        "risk": "An uncaught error in one screen takes down the whole view, and if nothing reports it the team never hears about it until users do. The same defect then stays in production across releases because no event exists to prioritize it.",
+        "position": 2,
+        "comments": []
+      },
+      {
+        "body": "Client errors can be tied to a backend request",
+        "description": "A client failure that involved the API can be joined to the server's record of that call. DONE only if: when the API returns a correlation or request id, the client puts that id on the error event or the user-facing support reference; a spot-check of the API client shows the id is read and forwarded rather than dropped; the auditor can point at one event that carries it, or at the code path that will. Applies only if the API provides such an id; applicability is declared at kickoff. Building the server's log pipeline is not this task.",
+        "risk": "When a user says a save failed, the client team and the server team search two systems that cannot be joined. The incident stays open while both sides look at the wrong request, and some failures can never be explained.",
+        "position": 3,
+        "comments": []
+      }
+    ]
+  },
+  {
+    "title": "Documentation and Knowledge",
+    "position": 8,
+    "tasks": [
+      {
+        "body": "Technical documentation (concrete minimum set)",
+        "description": "Core technical documentation exists as a named minimum set, not as 'general docs somewhere'. DONE only if: the project space or repo contains, at minimum, (1) a step-by-step guide to running the project locally, (2) an architecture overview, (3) the deployment process, and (4) a description of external dependencies and integrations (APIs, design source, feature flags); each of the four is checked against the current codebase and infrastructure, and a doc that describes an earlier phase of the project counts as missing.",
+        "risk": "If the essentials of how to run, update, and connect the interface exist only in the current team's heads, every handover, staffing change, or urgent fix starts with days of detective work - the project stays dependent on specific people, and any future takeover costs far more than it should.",
+        "position": 0,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778129/Coding+Guidelines",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "README with project essentials",
+        "description": "The repository README is the entry point: an engineer must be able to go from clone to a running app using it alone. DONE only if: the README (or docs it links directly) states prerequisites, step-by-step setup and run commands, and pointers to the wider documentation; and following it on a clean machine actually yields a running app. A long README that describes the product but omits working setup steps does not pass.",
+        "risk": "Every new person joining the project loses days just getting it to start on their own machine, so team changes and holiday cover become slow and expensive, and work on actual features is delayed each time.",
+        "position": 1,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778197/READme+Template",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Code documentation (JSDoc/TSDoc)",
+        "description": "Public and non-obvious code carries doc comments in JSDoc or TSDoc. DONE only if: public hooks, shared components, and non-trivial modules document their purpose and contract; a spot-check shows the comments match current behavior rather than an old implementation; and tricky sections explain why the code does what it does, not merely restate it.",
+        "risk": "Developers have to guess how existing parts of the interface are meant to be used, and wrong guesses become avoidable defects that reach users and take extra time and money to trace back to their source.",
+        "position": 2,
+        "comments": [
+          {
+            "comment": "https://tsdoc.org/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Architecture decision log",
+        "description": "Significant technical choices are recorded as decision records with their context and consequences. DONE only if: an ADR log exists in the repo or project space; it has entries for the major decisions visible in the codebase (framework, rendering model, state, routing, key third parties); each entry states context, decision, and consequences; and decisions made since the previous assessment have entries too. Diagrams are a separate task.",
+        "risk": "When the people who made key technical choices leave, nobody remembers why things are built the way they are - the team wastes time re-debating settled questions or accidentally reverses a decision made for good reason, paying for the same mistake twice.",
+        "position": 3,
+        "comments": []
+      },
+      {
+        "body": "Context and composition diagrams",
+        "description": "A context view and a view of the main UI parts show the system's boundaries and how the client is composed. DONE only if: at least a context diagram (users, the client, the APIs and third parties it calls) and a component or composition view of the main features exist; every external integration found in config actually appears on them; the diagrams match the current system - no removed parts still drawn, no added ones missing.",
+        "risk": "Nobody has a reliable picture of how the interface and its external services connect, so decisions about a new integration are made on assumptions - and the errors only show up once the screen is live and users are affected.",
+        "position": 4,
+        "comments": [
+          {
+            "comment": "https://c4model.com/",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Cookbook: agreed patterns and folder structure",
+        "description": "A cookbook fixes the team's agreed coding patterns and folder structure with reference examples. DONE only if: it covers folder layout, the anatomy of a feature or screen, and worked examples for recurring tasks (new screen, new shared component, data fetching, error handling); and a spot-check of the most recently added code shows it actually follows the documented patterns - a cookbook the code ignores does not pass.",
+        "risk": "Every developer organizes their work in their own style, so the application becomes steadily harder to navigate and check - each change takes longer than the last, and bringing in new people or extra help gets progressively more expensive.",
+        "position": 5,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778169/Cookbook",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "NFRs defined",
+        "description": "Non-functional requirements are written down explicitly rather than assumed. DONE only if: NFRs cover at least performance (with a Core Web Vitals or equivalent target), accessibility (a named level), security, and a maintainability or bundle expectation; each is stated measurably (numbers and limits, not adjectives like 'fast'); and they are either agreed with the client or explicitly marked as team-assumed defaults awaiting confirmation.",
+        "risk": "The interface can ship every screen on the feature list and still fail the client's unwritten expectations for speed, accessibility, or weight - a gap discovered at launch, when meeting it means expensive rework instead of an early design choice.",
+        "position": 6,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/spaces/DEV/pages/157778245/NFR",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Risk register: content validated",
+        "description": "This task grades what is in the risk register, not whether a page exists. DONE only if: the register lists the project's currently real technical risks - critical findings known from this or prior assessments that are absent from it fail the task; each risk has an owner, probability or impact, and a mitigation strategy or plan; there is evidence (minutes, decks, tickets) that risks were reviewed and presented to stakeholders since the last assessment; and resolved or obsolete entries are closed rather than left cluttering the list.",
+        "risk": "The project's real dangers stay untracked, so when one of them actually happens the team improvises under pressure instead of following a prepared plan - and the client is blindsided by a costly problem nobody warned them about.",
+        "position": 7,
+        "comments": [
+          {
+            "comment": "https://wiki.geniusee.tk/display/QAD/Risks",
+            "type": "LINK"
+          }
+        ]
+      },
+      {
+        "body": "Tech debt: managed and validated",
+        "description": "Technical debt is tracked and actually worked, not merely declared as a process. DONE only if: debt items exist as actionable tickets (not just TODO comments) with enough context to implement; a prioritization rule exists (for example a fixed share of sprint capacity) and recent iterations show debt tickets genuinely closed; and the debt visible in the code during this assessment is reflected in the backlog - significant debt the auditor can see that has no ticket fails the task.",
+        "risk": "Known internal problems pile up without ever being scheduled for fixing, so delivery gets slower month by month - until even a simple new screen carries the price tag of a major repair job.",
+        "position": 8,
+        "comments": []
+      },
+      {
+        "body": "Useful links: designs, environments, credential locations",
+        "description": "One current index page gathers the project's key links: environment URLs, where credentials are stored (vault or secret-manager entries - never the secret values themselves), repositories, CI, design files, monitoring or error-tracker dashboards, and third-party consoles. DONE only if: the page exists in the project space and covers environments, credential locations, design, monitoring or CI, and key external tools; and a sample of links opened at assessment resolves to live, current destinations - dead or outdated links fail.",
+        "risk": "The team loses time daily just finding where systems, designs, and access details live, and during an outage nobody can quickly locate the right dashboards or stored access - turning minutes of downtime into hours.",
+        "position": 9,
+        "comments": []
+      },
+      {
+        "body": "On-boarding and off-boarding docs",
+        "description": "Both joining and leaving the project are documented as runnable checklists. DONE only if: the onboarding doc lists the accesses to request, setup steps, and first-task guidance, and is verified against reality (the most recent joiner followed it, or the auditor can trace it end to end); the offboarding checklist enumerates the accesses and credentials to revoke plus knowledge-handover steps; and both reflect the current toolset rather than tools the project no longer uses.",
+        "risk": "New team members take weeks instead of days to become productive, and people who leave can quietly keep access to the client's systems, design files, and error data - an open door that stays open until someone happens to notice.",
+        "position": 10,
+        "comments": []
+      }
+    ]
+  }
+]

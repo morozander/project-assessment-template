@@ -1,0 +1,2992 @@
+{
+  "id": "98527081-908e-4782-b982-8fa018fe90d0",
+  "createdAt": "2025-12-17T14:38:24.194Z",
+  "deletedAt": null,
+  "title": "Front-end",
+  "label": "FE",
+  "currentVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+  "createdById": "555065d9-0787-4510-9b72-9f248d95d698",
+  "ownerId": "555065d9-0787-4510-9b72-9f248d95d698",
+  "isDeleted": false,
+  "currentVersion": {
+    "id": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+    "createdAt": "2026-07-14T07:57:26.813Z",
+    "deletedAt": null,
+    "templateId": "98527081-908e-4782-b982-8fa018fe90d0",
+    "versionNo": 5,
+    "parentVersionId": "7b00cc5d-2224-4a2b-b8a6-a159f0e74d64",
+    "estimationAreas": [
+      {
+        "id": "5ec2d37c-ebb4-4f1e-9365-15e913b8bfbe",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Comunication",
+        "position": 0,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "690ec7f5-1976-4113-adfa-144835de9601",
+        "tasks": [
+          {
+            "id": "3e78ca46-0098-4912-8b92-5e79b2b5d5fc",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Communication channels setup",
+            "description": "Define official communication channels — Slack/Teams for internal, and agreed channels for client communication. Specify response times and escalation paths.",
+            "risk": " - Critical issues may be delayed or missed without a clear escalation path\n - Important information gets lost when team and client use mixed/unofficial channels\n - Missed deadlines due to unclear ownership of responses\n - Reputational damage from slow or inconsistent client communication",
+            "position": 0,
+            "templateAreaId": "5ec2d37c-ebb4-4f1e-9365-15e913b8bfbe",
+            "lineageId": "ec3e20d4-ba1b-42b1-8ef0-a39c272dd046",
+            "comments": [
+              {
+                "id": "6db4150d-4f65-424e-9d77-03fa0666528e",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "3e78ca46-0098-4912-8b92-5e79b2b5d5fc",
+                "comment": "https://www.atlassian.com/blog/teamwork/team-communication;https://www.atlassian.com/blog/teamwork/team-communication",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "4731ff2c-e200-47d5-84eb-ccdbdcbc03f2",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "FE-team specific communication",
+            "description": "For projects with multiply FE developers, create a dedicated channel and regular sync meeting (led by PM or TL).",
+            "risk": " - Duplicate work or conflicting implementations across FE developers\n - Blockers go unresolved without a clear sync point\n - Lack of shared context leads to inconsistent decisions and code style\n - PM/TL loses visibility into team progress and individual blockers",
+            "position": 1,
+            "templateAreaId": "5ec2d37c-ebb4-4f1e-9365-15e913b8bfbe",
+            "lineageId": "f402dbbe-a164-4059-8dfa-d88e8e934e17",
+            "comments": [
+              {
+                "id": "9e84b571-793b-4a31-81bc-9efa4d6b15f1",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "4731ff2c-e200-47d5-84eb-ccdbdcbc03f2",
+                "comment": "https://scrumguides.org/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "6d86acf4-9bb5-4bb4-be1a-d17aae2f6210",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Work Breakdown vs Commitment",
+            "description": "PM must discuss initial estimates from the pre-sale phase and get commitment from the team; reestimate if needed.",
+            "risk": " - Team works from inaccurate pre-sale estimates, leading to missed deadlines\n - Developers feel no ownership over timelines they weren't involved in\n - Scope misalignment between what was sold and what the team actually builds\n - No baseline for detecting scope creep early",
+            "position": 2,
+            "templateAreaId": "5ec2d37c-ebb4-4f1e-9365-15e913b8bfbe",
+            "lineageId": "ae1685be-6648-49b4-b6ae-ca904287dd40",
+            "comments": [],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "35787352-4be2-4ab7-a8a3-4ed6736353f3",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Jira set-up",
+        "position": 1,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "524a3d38-4665-4e09-a971-6eb45a69987f",
+        "tasks": [
+          {
+            "id": "fe94570d-6c10-41ad-b32d-ade9c78ee552",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Set up rules with the inability to move proper tasks to in testing column if the root cause and affected component and affected areas is not added by developers",
+            "description": "Configure Jira workflow validators to enforce filling out root cause and affected components before moving tickets to QA.",
+            "risk": " - QA tests without context, missing related areas and causing regression bugs in production\n - Root cause analysis gets skipped under deadline pressure, same bugs reappear\n - No traceability between bugs and affected components, making impact assessment impossible\n - Increased back-and-forth between dev and QA due to incomplete ticket information",
+            "position": 0,
+            "templateAreaId": "35787352-4be2-4ab7-a8a3-4ed6736353f3",
+            "lineageId": "673ee08a-ae90-4d8e-997b-bff0b406afa5",
+            "comments": [
+              {
+                "id": "755c8ba6-9916-4a68-9655-c0756d38717a",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "fe94570d-6c10-41ad-b32d-ade9c78ee552",
+                "comment": "https://wiki.geniusee.tk/display/QAD/Jira+workflow+for+impact+analysis",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "f318f9e6-1302-4c0b-963e-3b60fd5c4f14",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Identify estimation approach",
+            "description": "Select the estimation method (Story Points, T-shirt sizing, or hours) best suited for the project scope.",
+            "risk": " - Inconsistent estimates across the team without a shared method\n - Inaccurate sprint planning leading to chronic over- or under-commitment\n - No reliable baseline for tracking velocity or forecasting delivery dates\n - Disputes between PM and team on what estimates actually mean",
+            "position": 1,
+            "templateAreaId": "35787352-4be2-4ab7-a8a3-4ed6736353f3",
+            "lineageId": "d9e1961f-c180-43f9-ba85-51e4b5fed2ad",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "fb318121-91c6-4903-84e9-7534148bb1d9",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Useful Links",
+            "description": "Maintain a central index page with links to designs, repositories, staging environments, and third-party tools.",
+            "risk": " - Developers waste time searching for resources across chats and emails\n - Outdated or broken links lead to work based on wrong designs or environments\n - Onboarding new team members takes significantly longer without a single source of truth\n - Risk of deploying to wrong environment due to confusion between staging/prod URLs",
+            "position": 2,
+            "templateAreaId": "35787352-4be2-4ab7-a8a3-4ed6736353f3",
+            "lineageId": "820718fe-8a28-45d4-8695-15c157b5cfa5",
+            "comments": [],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Repository structure configuration",
+        "position": 2,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "9e538770-ba9f-42ed-b710-caee9e7654c4",
+        "tasks": [
+          {
+            "id": "3d8ef925-d7e8-4a16-bafb-0c0929127ba6",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Branching Strategy",
+            "description": "Define and follow a clear Git branching model. Use structured branch naming (feature/, bugfix/, hotfix/, release/). Create branches per feature, release, or urgent fix. Maintain develop for integration and main for production-ready code.",
+            "risk": " - Merging conflicts escalate when developers work directly on shared branches\n - Hotfixes accidentally introduce unfinished features into production\n - No clear separation between stable and in-progress code increases deployment risk\n - Difficult to trace which branch belongs to which feature or ticket\n - Rollbacks become complex without a clean main/develop separation",
+            "position": 0,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "ed1dfbd0-ec00-4af6-8089-713268b9dab4",
+            "comments": [
+              {
+                "id": "594f193c-123f-4183-9a31-7e693ba1c997",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "3d8ef925-d7e8-4a16-bafb-0c0929127ba6",
+                "comment": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "682a2747-595c-408e-b7c6-befd8fe92531",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Repository Integration",
+            "description": "Integrate the repository with Jira and Slack. Link commits and PRs to Jira issues. Automate Slack notifications for builds, PR updates, and deployments.",
+            "risk": " - No traceability between code changes and Jira tickets, making audits and debugging harder\n - Team unaware of PR updates or failed builds without automated notifications\n - Manual status updates increase PM overhead and risk of outdated information\n - Delayed reaction to broken builds due to lack of real-time alerts",
+            "position": 1,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "41b90810-51c0-4421-a50d-c990c0d91203",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "155296c9-e550-43e9-b818-76862bb57566",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Pull Request Communication",
+            "description": "Keep all code-related discussions and feedback within PR comments. Avoid personal or private channels to ensure transparency and traceability.",
+            "risk": " - Code decisions made in private chats leave no traceable record for future reference\n - Knowledge stays siloed — other developers miss context that could prevent similar issues\n - Harder to onboard new team members without documented review history\n - Disputes over \"who said what\" with no written trail in the codebase",
+            "position": 2,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "c0943413-2b3e-4e63-9fd8-9b1b9095c30e",
+            "comments": [
+              {
+                "id": "52b9c38d-011b-448b-b181-712a9dcd1a32",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "155296c9-e550-43e9-b818-76862bb57566",
+                "comment": "https://google.github.io/eng-practices/review/reviewer/comments.html",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "bcda055a-b4ec-43b4-8d1f-d82f22d6f4d1",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Git Tags & Versioning",
+            "description": "Use semantic versioning (v1.2.3) to tag releases. Automate tag creation in CI/CD pipelines and align changelogs with tagged versions.",
+            "risk": " - No clear reference point for rollbacks when a release introduces critical bugs\n - Impossible to correlate bug reports with specific deployed versions\n - Manual tagging leads to inconsistent or missing version markers\n - Changelogs become unreliable, making release communication to the client harder",
+            "position": 3,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "ab0cad3b-b014-4a09-bb50-7b9e8a848260",
+            "comments": [
+              {
+                "id": "f3be14c6-2ca9-4a33-ac24-8fe1b7aabb43",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "bcda055a-b4ec-43b4-8d1f-d82f22d6f4d1",
+                "comment": "https://semver.org/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "92751235-cf0c-4fc3-b8f6-b471dfd4eb33",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Code Review Process",
+            "description": "Establish a structured review process: require at least one peer approval, ensure all automated checks pass before merge, and enforce coding standards. Provide respectful, actionable feedback.",
+            "risk": " - Bugs and security vulnerabilities reach production without peer validation\n - Inconsistent code quality across the team without enforced standards\n - Automated checks bypassed under deadline pressure, increasing technical debt\n",
+            "position": 4,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "a8d632bc-9d75-4c4c-97a2-20e5b2a2fee8",
+            "comments": [
+              {
+                "id": "359484a2-fe46-4eeb-802f-b6e8bf23b840",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "92751235-cf0c-4fc3-b8f6-b471dfd4eb33",
+                "comment": "https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "15a0bce5-4092-49ac-b71d-7975344b67af",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "AI Code Review",
+            "description": "Integrate AI-assisted code review into the development workflow to automatically analyze pull requests for potential bugs, security vulnerabilities, performance issues, code quality, maintainability, best practices, and compliance with project standards.",
+            "risk": " - Bugs, security vulnerabilities, and performance issues are more likely to reach production\n - Inconsistent adherence to coding standards and architectural guidelines across the codebase\n - Human reviewers spend more time on repetitive issues instead of focusing on business logic and design decisions\n - Slower code review process, increasing lead time for changes\n - Knowledge sharing opportunities are reduced because common improvements are not consistently highlighted\n - Technical debt accumulates due to missed refactoring and code quality recommendations\n - New team members receive less actionable feedback, slowing onboarding and skill development",
+            "position": 5,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "f97b77d5-4a9d-43cf-a4d7-287ac4509841",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "eb0aa4a4-6459-4d59-8920-ae3b99b7af19",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Commit Conventions",
+            "description": "Enforce conventional commit format (feat:, fix:, docs:, refactor:). Use regex validation.",
+            "risk": " - Unclear commit history makes debugging and root cause analysis time-consuming\n - Automated changelog and release note generation becomes impossible\n - Harder to filter and understand changes during code reviews or audits\n - Inconsistent history complicates bisecting to find bug-introducing commits",
+            "position": 6,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "171ba361-b37e-4b89-adab-3ff2721843d5",
+            "comments": [
+              {
+                "id": "8454370b-5ff7-4ce1-9cc2-d421c48ca27e",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "eb0aa4a4-6459-4d59-8920-ae3b99b7af19",
+                "comment": "https://www.conventionalcommits.org/en/v1.0.0/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "9ed23a12-d5ec-46ed-8902-8784acca2025",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Documentation (README.md)",
+            "description": "Maintain a comprehensive README.md including setup, environment configuration, build and deployment instructions, and troubleshooting steps.",
+            "risk": " - New developers cannot onboard independently, increasing senior team member overhead\n - Inconsistent local setups lead to \"works on my machine\" issues\n - Build and deployment steps done incorrectly due to lack of clear instructions\n - Troubleshooting takes significantly longer without documented common issues",
+            "position": 7,
+            "templateAreaId": "0a628d9e-7cb3-44dc-acda-58a6ba03d789",
+            "lineageId": "75c98047-d908-404a-9606-242f1b6e77fe",
+            "comments": [
+              {
+                "id": "073dd65c-2313-4d3f-bf80-760ce13eb7be",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "9ed23a12-d5ec-46ed-8902-8784acca2025",
+                "comment": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "e8916518-cdb6-46dd-84e9-553852a64d34",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "CI/CD",
+        "position": 3,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "a0e9b77a-ff98-4b14-9985-af4ae651ae8d",
+        "tasks": [
+          {
+            "id": "58936559-a236-4776-8250-44347f1677e7",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Pipeline for build, tests, and deployment",
+            "description": "Automate building, testing, and deploying React applications to ensure reliable releases and consistent production quality. Gate deploy on passing tests & quality checks.",
+            "risk": " - Broken or untested code reaches production without automated quality gates\n - Manual deployments introduce human error and inconsistent release processes\n - No early detection of failing tests leads to costly fixes late in the cycle\n - Releases become risky and infrequent due to lack of confidence in the process",
+            "position": 0,
+            "templateAreaId": "e8916518-cdb6-46dd-84e9-553852a64d34",
+            "lineageId": "d0fe971c-3903-4e7e-b9a0-793619e74f2b",
+            "comments": [
+              {
+                "id": "53a63837-1d8e-4b8c-91d6-97890aff50c8",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "58936559-a236-4776-8250-44347f1677e7",
+                "comment": "https://nareshit.com/blogs/ci-cd-for-react-applications-practical-overview",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "08224aa1-5e8b-4088-b4c7-8f34cf2f3e96",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Configuration management via env vars & secrets",
+            "description": "Use environment variables and secure secret storage to manage app settings safely across environments.",
+            "risk": " - Hardcoded secrets in the codebase risk exposure via public repositories\n - Environment-specific bugs go undetected when configs are shared across dev/staging/prod\n - Leaked API keys or credentials lead to security breaches and potential data loss\n - Onboarding developers get access to production secrets they shouldn't see",
+            "position": 1,
+            "templateAreaId": "e8916518-cdb6-46dd-84e9-553852a64d34",
+            "lineageId": "12605cdf-1e0b-4eb9-abf5-4f0e953df9ee",
+            "comments": [
+              {
+                "id": "ca06d660-5937-48e1-b291-dee8790e1314",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "08224aa1-5e8b-4088-b4c7-8f34cf2f3e96",
+                "comment": "https://docs.bitrise.io/en/bitrise-ci/configure-builds/secrets.html",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "22eba2e0-1f15-46fa-9114-6dfb150e2a81",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Implement build and deployment pipeline",
+            "description": "Automate deployments from CI pipelines (GitHub Actions). Define deployment environments (staging, production) and support fast rollback to previous versions. Ensure consistency of application versions, environment variables, and configuration across all environments and builds.",
+            "risk": " - Manual deployments cause inconsistent releases and increase human error risk\n - No rollback mechanism means extended downtime when a bad release hits production\n - Environment drift between staging and production leads to bugs appearing only in prod\n - Lack of automated pipeline blocks team from delivering frequently and confidently",
+            "position": 2,
+            "templateAreaId": "e8916518-cdb6-46dd-84e9-553852a64d34",
+            "lineageId": "0caf6892-bc83-43c3-9cb8-af4743faf2eb",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "9aac036f-755c-4591-b2b7-594d6b7b8701",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Rollback strategy implemented",
+            "description": "Use staged rollouts to minimize blast radius; if issues appear, halt or stop the rollout and ship a fixed build. Document steps in runbooks.",
+            "risk": " - Extended downtime during incidents without a clear and practiced rollback procedure\n - Panic-driven manual fixes under pressure introduce additional bugs in production\n - No runbook means every incident response is improvised, increasing resolution time\n - Staged rollouts skipped under deadline pressure, exposing all users to breaking changes at once",
+            "position": 3,
+            "templateAreaId": "e8916518-cdb6-46dd-84e9-553852a64d34",
+            "lineageId": "c24f9c3a-132d-4d09-9df2-abc528ac8316",
+            "comments": [
+              {
+                "id": "6ea4b107-1e63-40a1-8b95-0abf9e53ff04",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "9aac036f-755c-4591-b2b7-594d6b7b8701",
+                "comment": "https://support.google.com/googleplay/android-developer/answer/6346149?hl=en",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "0a3bf336-103b-431b-a48e-79a39e03a429",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Quality and tooling",
+        "position": 4,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "0cd7d24d-eb5f-4c5a-985a-540d89efa549",
+        "tasks": [
+          {
+            "id": "054bac04-4ace-44ec-9932-931d298b59c5",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Unit tests coverage %",
+            "description": "Collect coverage with Jest (--coverage, coverageReporters: ['text','lcov']), publish LCOV to Sonar if used; track % on PRs.",
+            "risk": " - Regressions go undetected when critical logic has no test coverage\n - No coverage baseline means coverage silently drops over time without anyone noticing\n - PRs merged with untested code increase long-term maintenance cost\n - False confidence in quality without measurable and tracked coverage metrics",
+            "position": 0,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "601cb456-632d-4b71-a0b0-c16c3087dc6a",
+            "comments": [
+              {
+                "id": "fa4bcb7a-da9f-4762-b64d-8a6341fc77ff",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "054bac04-4ace-44ec-9932-931d298b59c5",
+                "comment": "https://jestjs.io/docs/configuration",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "29659c27-eaac-4ea2-a542-9da822224c64",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Snapshot tests coverage %",
+            "description": "Use Jest snapshot tests for UI regressions; commit snapshots and review diffs in PRs; keep snapshots focused to avoid brittleness.",
+            "risk": " - Unintended UI changes ship to production undetected\n - Snapshot diffs ignored or blindly updated in PRs, defeating their purpose\n - Overly broad snapshots break on every minor change, causing test fatigue and eventually being disabled\n - No visual regression baseline makes it hard to catch component-level regressions during refactoring",
+            "position": 1,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "5f20438c-89dd-4fe5-ab95-df92a2c86855",
+            "comments": [
+              {
+                "id": "aa3e84a9-ae15-4d40-afa6-4c0d904352a6",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "29659c27-eaac-4ea2-a542-9da822224c64",
+                "comment": "https://jestjs.io/docs/snapshot-testing",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "13e5f55c-ff80-47d8-9b91-c8426fadf6d0",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "e2e tests coverage %",
+            "description": "Define target for critical flows covered by e2e (login, checkout, etc.); run on CI for Android & iOS; monitor pass rate & flakiness.",
+            "risk": " - Critical user flows (login, checkout) break in production without automated end-to-end validation\n - Platform-specific bugs on Android or iOS go undetected without cross-platform CI runs\n - Flaky tests erode team trust in the suite, leading to ignored failures and disabled tests\n - No pass rate monitoring makes it impossible to detect gradual test suite degradation",
+            "position": 2,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "665a4755-8a8b-4110-abe1-36faf8c6a52d",
+            "comments": [
+              {
+                "id": "3bbe98c9-6863-4b6c-a14c-a3ed1f254149",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "13e5f55c-ff80-47d8-9b91-c8426fadf6d0",
+                "comment": "https://github.com/wix/Detox",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "e90f42ab-b7ea-4021-b540-e993ca5e0499",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Set code coverage threshold (e.g., 80%)",
+            "description": "Enforce coverageThreshold in jest.config.* (global + per-dir overrides) so PRs fail below target.",
+            "risk": " - Coverage drops gradually over time with no automated enforcement to catch it\n - PRs with insufficient tests get merged when threshold is only a guideline, not a gate\n - Inconsistent coverage across modules due to lack of per-directory thresholds\n - Team loses accountability for test quality without a hard failing signal in CI",
+            "position": 3,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "3aecdf97-0d2f-4f28-8f13-98710d1c98d3",
+            "comments": [
+              {
+                "id": "e6994a56-a6d7-4d5b-9490-8126181999a6",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "e90f42ab-b7ea-4021-b540-e993ca5e0499",
+                "comment": "https://jestjs.io/docs/configuration",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "db8cb782-2b55-47c1-9b31-7d5a08fe3d74",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Define linting & formatting standards",
+            "description": "Adopt ESLint for code quality and Prettier for formatting; integrate to avoid rule conflicts and run both in CI.",
+            "risk": " - Inconsistent code style across the team increases cognitive load during code reviews\n - Formatting debates waste review time on non-functional changes\n - Silent code quality issues (unused vars, unsafe patterns) accumulate without ESLint enforcement\n - CI without linting allows non-compliant code to merge, making standards effectively optional",
+            "position": 4,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "0dc43f73-5c44-4c64-8c0b-761d1af61755",
+            "comments": [
+              {
+                "id": "1bbca6fb-7e81-40fc-a055-8534731a03fe",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "db8cb782-2b55-47c1-9b31-7d5a08fe3d74",
+                "comment": "https://prettier.io/docs/integrating-with-linters/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "f672383c-8235-4ab2-9d21-f87a1852398a",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "SonarQube connected (Geniusee self-hosted)",
+            "description": "Configure sonar-project.properties, feed Jest LCOV to sonar.javascript.lcov.reportPaths, and gate PRs with a Quality Gate (Clean-as-You-Code).",
+            "risk": " - Code smells, duplications, and security vulnerabilities accumulate undetected without static analysis\n - No quality gate means PRs with critical issues merge without any automated block\n - Coverage data stays local and invisible to the team without centralized reporting\n - Technical debt grows silently with no measurable tracking or accountability across the project",
+            "position": 5,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "152349f9-c88a-4c85-95fa-dccddda4e6b3",
+            "comments": [
+              {
+                "id": "54309f00-d1bf-43f7-8d53-c63dafdb4a75",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "f672383c-8235-4ab2-9d21-f87a1852398a",
+                "comment": "https://docs.sonarsource.com/sonarqube-server/10.8/instance-administration/analysis-functions/quality-gates",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "2cb57dcf-af9a-4e07-bd38-90ca03cbf127",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Security code scans integrated",
+            "description": "Run Sonar’s JS/TS static analysis during CI, review Security Hotspots, and keep “Clean as You Code” Quality Gate green before release.",
+            "risk": " - Known vulnerabilities and injection risks ship to production without static analysis catching them\n - Security hotspots accumulate unreviewed, creating exploitable attack surfaces over time\n - No CI gate allows security-critical PRs to merge without any automated block\n - Compliance and audit failures when security scanning is absent from the release process",
+            "position": 6,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "3110a954-931b-4cbd-be26-4fb163f737fd",
+            "comments": [
+              {
+                "id": "3c4c26c6-a8a5-4466-8178-9fb405461620",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "2cb57dcf-af9a-4e07-bd38-90ca03cbf127",
+                "comment": "https://docs.sonarsource.com/sonarqube-server/user-guide/security-hotspots",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "c971d072-f21a-45b4-ab78-b26fe068229d",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Setup unit/integration testing framework",
+            "description": "Vitest or Jest + @testing-library",
+            "risk": " - No shared testing setup leads to inconsistent approaches across the team\n - Missing integration tests allow broken component interactions to reach production\n - Developers skip writing tests when no framework or conventions are established\n - Bugs caught late in QA or production that would have been detected early with proper test tooling",
+            "position": 7,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "95ad71b2-7bd8-4791-82ad-0593897f8c03",
+            "comments": [
+              {
+                "id": "a473f765-c814-47b0-9b4d-e04810aa915c",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "c971d072-f21a-45b4-ab78-b26fe068229d",
+                "comment": "https://vitest.dev/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "ebc9d228-e364-4a1e-861a-49e9440baad7",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Pre-commit hooks enabled (lint, format, test)",
+            "description": "Wire Husky + lint-staged to run ESLint/Prettier (and fast tests) on staged files before commit.",
+            "risk": " - Linting and formatting issues enter the codebase when enforcement relies solely on developer discipline\n - CI pipeline overloaded with fixable issues that should have been caught locally before push\n - Inconsistent code quality between developers who run checks manually and those who don't\n - Fast feedback loop lost — developers discover style and lint errors only after pushing and waiting for CI",
+            "position": 8,
+            "templateAreaId": "0a3bf336-103b-431b-a48e-79a39e03a429",
+            "lineageId": "7d872de5-ed0c-47b6-9966-e127e3c7bd82",
+            "comments": [
+              {
+                "id": "958b9296-5758-4e62-ae6c-eea4a38fdbd6",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "ebc9d228-e364-4a1e-861a-49e9440baad7",
+                "comment": "https://www.npmjs.com/package/lint-staged",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "8b795490-cf97-4c2d-ba08-21553b1d8cf6",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "IDE Setup",
+        "position": 5,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "a00dd322-d54f-447c-9555-66ae1801a98c",
+        "tasks": [
+          {
+            "id": "04e1ff5c-a029-4a32-b014-023c0f975d1c",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "IDE: Team use of plugins (linter, SonarLint, etc.)",
+            "description": "Standardize a baseline across VS Code/Cursor: enable ESLint and SonarQube for IDE (formerly SonarLint) via workspace recommendations; enforce on-save linting.",
+            "risk": " - Developers catch linting and security issues only in CI instead of instantly while coding\n - Inconsistent plugin configurations across team members lead to different local behavior\n - New developers waste time setting up their environment without standardized workspace recommendations\n - Code quality issues accumulate faster when feedback loop relies on CI rather than real-time IDE warnings",
+            "position": 0,
+            "templateAreaId": "8b795490-cf97-4c2d-ba08-21553b1d8cf6",
+            "lineageId": "96c35d71-ed9f-4c5b-bc53-899f01f0ace6",
+            "comments": [
+              {
+                "id": "05626c90-1406-45c5-affa-43103c1b522e",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "04e1ff5c-a029-4a32-b014-023c0f975d1c",
+                "comment": "https://docs.sonarsource.com/sonarqube-for-vs-code",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "e3fc8d76-fd56-4ef2-894f-fa9bc49d823c",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "IDE: Plugin setup for uniform code formatting",
+            "description": "Use Biome or Prettier as default formatter with format on save; commit shared .biome.json or .prettierrc",
+            "risk": " - Noisy PRs filled with formatting-only changes obscure actual logic differences during review\n - Merge conflicts increase when developers use different formatters or settings locally\n - Shared config files ignored when not enforced via workspace recommendations\n - Onboarding developers default to their personal formatter, silently breaking team conventions",
+            "position": 1,
+            "templateAreaId": "8b795490-cf97-4c2d-ba08-21553b1d8cf6",
+            "lineageId": "b76f3fb7-4e51-431c-aa2e-2fc01060bc3f",
+            "comments": [
+              {
+                "id": "ae0cee57-afd6-4750-bc0e-025e595e2c57",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "e3fc8d76-fd56-4ef2-894f-fa9bc49d823c",
+                "comment": "https://prettier.io/docs/editors;https://biomejs.dev/guides/getting-started;https://gitlab.geniusee.com/frontend/react-spa-boilerplate/-/blob/main/biome.json",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "8b49efb1-0364-4f76-98ea-90d9bfb90719",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "IDE: Analysis & notification of deprecated/compromised libraries",
+            "description": "Add a security/deps scanner in the IDE (e.g., Snyk). Flag vulnerable/Deprecated packages in-editor; pair with npm audit in CI.",
+            "risk": " - Vulnerable dependencies ship to production when security issues are only discovered during manual audits\n - Developers unknowingly build on deprecated APIs, increasing future migration cost\n - No in-editor warnings mean security risks are invisible until CI or a breach surfaces them\n - Delayed response to newly disclosed CVEs without automated monitoring of project dependencies",
+            "position": 2,
+            "templateAreaId": "8b795490-cf97-4c2d-ba08-21553b1d8cf6",
+            "lineageId": "aa334fdb-d76f-49f6-952c-962a4e7b2e7b",
+            "comments": [
+              {
+                "id": "34035af9-cc6a-4729-ac16-7a642e52c87b",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "8b49efb1-0364-4f76-98ea-90d9bfb90719",
+                "comment": "https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "9606a533-22a7-4a73-bbe5-3c27cef9d468",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Cursor usage ≥ stream average (per Geniusee dashboard)",
+            "description": "Based on the internal dashboard (built on the Cursor Analytics API), compare the stream benchmark vs the per-employee mark.",
+            "risk": " - Developers underutilize AI-assisted coding, reducing team velocity compared to company benchmark\n - No visibility into individual adoption makes it impossible to identify who needs additional support or training\n - Competitive disadvantage within the company when the team consistently falls below the stream average\n - Missed opportunity to leverage AI tooling for faster delivery and reduced technical debt",
+            "position": 3,
+            "templateAreaId": "8b795490-cf97-4c2d-ba08-21553b1d8cf6",
+            "lineageId": "84022757-5d26-4128-950c-f23554609004",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "d6cb166f-410b-4312-b802-ca6c6ad88626",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Cursor setup: rules, integrated docs, Figma MCP, new features",
+            "description": "Add project rules (.cursor/rules/*.mdc) for standards; connect MCP servers (e.g., Figma) to bring design context into the IDE; keep agents/modes updated via team settings.",
+            "risk": " - Developers work without project-specific AI context, getting generic and less accurate suggestions\n - Design-to-code gap widens without Figma MCP integration, leading to manual interpretation of designs\n - Inconsistent AI behavior across team members without shared rules and project standards\n - Team misses productivity gains from new Cursor features due to lack of centralized configuration management",
+            "position": 4,
+            "templateAreaId": "8b795490-cf97-4c2d-ba08-21553b1d8cf6",
+            "lineageId": "7e730894-ca1e-4ba0-9e98-ffb28fa90e6f",
+            "comments": [
+              {
+                "id": "caa31d37-5c90-4257-8cbb-3779d7e05935",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "d6cb166f-410b-4312-b802-ca6c6ad88626",
+                "comment": "https://cursor.com/docs/context/rules",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Code design",
+        "position": 6,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "a2afcba2-eabd-4bda-bb35-8747c784657f",
+        "tasks": [
+          {
+            "id": "1eb8b798-cf2a-42ea-bcd2-215d99df0d05",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Use reliable FE patterns",
+            "description": "Favor composition and reusable logic via custom Hooks instead of inheritance; extract cross-component behavior to hooks and keep components focused.",
+            "risk": " - Business logic leaks into components, making them hard to test and reuse\n - Code duplication across components when shared behavior isn't extracted into hooks\n - Components grow large and tightly coupled, increasing refactoring cost over time\n - Inconsistent patterns across the codebase make onboarding and code reviews slower",
+            "position": 0,
+            "templateAreaId": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+            "lineageId": "b13aceb8-fcd0-416b-b9bf-b2092a02dd6e",
+            "comments": [
+              {
+                "id": "4c95afb9-fe6b-41e1-8064-09110e7d183a",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "1eb8b798-cf2a-42ea-bcd2-215d99df0d05",
+                "comment": "https://react.dev/learn/reusing-logic-with-custom-hooks",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "f1fefae9-b39a-4441-bece-4a6ee09134e5",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Use performance-improving technologies",
+            "description": "Leverage modern web performance features such as React concurrent mode, code-splitting, lazy loading, and tree-shaking to reduce initial load time, memory usage, and bundle size. Consider enabling React Server Components or React Suspense where relevant to improve rendering efficiency and app responsiveness.",
+            "risk": " - Large initial bundle size leads to slow load times, directly impacting user retention and conversion\n - Blocking renders degrade perceived performance without concurrent mode or Suspense boundaries\n - Unused code shipped to users when tree-shaking and code-splitting are not configured\n - Memory leaks and janky interactions accumulate without deliberate optimization strategies\n - Performance regressions go unnoticed without established baselines and monitoring in place",
+            "position": 1,
+            "templateAreaId": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+            "lineageId": "8f94d8d3-f64a-4b19-8381-df1ffe43bdb2",
+            "comments": [
+              {
+                "id": "4da34e3b-dfac-45d4-9616-90e03b8a19c6",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "f1fefae9-b39a-4441-bece-4a6ee09134e5",
+                "comment": "https://web.dev/articles/code-splitting-suspense",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "c20447a0-48ce-47f5-9c96-c67013a04792",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Write maintainable, readable, modular code",
+            "description": "Apply clean code conventions (clear naming, small functions, cohesive modules), prefer composition over deep inheritance, and keep module boundaries explicit.",
+            "risk": " - Codebase becomes increasingly hard to navigate as complexity grows without clear module boundaries\n - Small bug fixes require understanding large, tightly coupled files, slowing down delivery\n - Onboarding new developers takes longer when code intent is unclear without consistent naming and structure\n - Refactoring risk increases when logic is scattered across deeply nested or monolithic components",
+            "position": 2,
+            "templateAreaId": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+            "lineageId": "eda35e5b-f20c-4090-8493-51797924d976",
+            "comments": [
+              {
+                "id": "0d617a2b-f3b6-41b8-bf89-ef78e0097565",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "c20447a0-48ce-47f5-9c96-c67013a04792",
+                "comment": "https://github.com/ryanmcdermott/clean-code-javascript",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "7987ac3b-7099-4297-b541-56af7f60ca27",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Expedient use of GoF patterns",
+            "description": "Use classic patterns (Factory, Strategy, Observer, etc.) only when they simplify code or encapsulate volatility; avoid over-engineering.",
+            "risk": " - Over-engineered solutions add unnecessary abstraction layers, slowing down development and onboarding\n - Inconsistent pattern usage across the team leads to unpredictable and hard-to-follow code structure\n - Volatile logic left unencapsulated causes cascading changes across the codebase when requirements shift\n - Junior developers struggle to contribute when patterns are applied without clear rationale or documentation",
+            "position": 3,
+            "templateAreaId": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+            "lineageId": "3d6277be-a00f-4915-a76c-26aeb1e45a62",
+            "comments": [
+              {
+                "id": "e2f1f320-7380-4eb3-a063-c606a054f989",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "7987ac3b-7099-4297-b541-56af7f60ca27",
+                "comment": "https://refactoring.guru/design-patterns",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "a0a4396d-4465-4308-b387-d2ddb764b345",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "SOLID, KISS, and other best practices",
+            "description": "Apply SOLID pragmatically (esp. SRP & DIP), keep designs KISS (avoid premature abstraction), and refactor toward patterns when duplication stabilizes.",
+            "risk": " - Components and functions accumulate multiple responsibilities, making them fragile and hard to test\n - Premature abstraction creates unnecessary complexity before requirements are fully understood\n - Tightly coupled modules make dependency replacement and unit testing significantly harder\n - Duplicated logic stabilizes into multiple diverging implementations, increasing long-term maintenance cost",
+            "position": 4,
+            "templateAreaId": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+            "lineageId": "14ee399f-9ebc-4ded-afc3-a89f052fcae7",
+            "comments": [
+              {
+                "id": "5a374b6a-a077-43a7-bb0b-6446a836c11c",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "a0a4396d-4465-4308-b387-d2ddb764b345",
+                "comment": "https://blog.logrocket.com/solid-principles-javascript",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "3c7ee356-6834-41ad-ad5c-d1db62fa77a3",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Clean architecture",
+            "description": "Separate UI from domain rules; keep business logic independent of frameworks and delivery (layers/boundaries, dependency inversion, testable core).",
+            "risk": " - Business logic tightly coupled to React components becomes untestable and impossible to reuse\n - Framework upgrades or replacements require rewriting core business rules alongside UI code\n - No clear layer boundaries make it hard to reason about where a bug originates\n - Domain logic mixed with API calls and UI state leads to bloated components and poor separation of concerns",
+            "position": 5,
+            "templateAreaId": "0b8e30ca-d237-4545-9a6d-1205682b9c2e",
+            "lineageId": "d1385f03-8e77-495f-8649-228887dd2eaf",
+            "comments": [
+              {
+                "id": "9092c7a2-23f5-4bd9-bd44-447ad5a8b3a1",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "3c7ee356-6834-41ad-ad5c-d1db62fa77a3",
+                "comment": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "95028922-4f68-415a-b5b6-da2060a44fb5",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "UI kit",
+        "position": 7,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "5cd978a3-4d60-45f6-9927-ad8dfb626e9f",
+        "tasks": [
+          {
+            "id": "b4712352-40d1-4d97-bae5-052f89bb277d",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Create custom or use lib for UI kit",
+            "description": "Stand up a component library (buttons, inputs, lists, banners) built in isolation; scaffold stories first and develop components against them.",
+            "risk": " - Inconsistent UI across the app when developers implement the same components independently\n - No isolated development environment leads to components being tested only in full app context\n - Design system drift between what Figma specifies and what gets implemented without a shared library\n - Duplicated component logic increases maintenance cost and makes global UI updates error-prone",
+            "position": 0,
+            "templateAreaId": "95028922-4f68-415a-b5b6-da2060a44fb5",
+            "lineageId": "5f9e03e0-ab20-41e0-9300-088c3a36580f",
+            "comments": [
+              {
+                "id": "37093dba-d9d7-42d5-ba49-f5ee5c27ac0a",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "b4712352-40d1-4d97-bae5-052f89bb277d",
+                "comment": "https://ui.shadcn.com/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "774ae739-c3b3-452e-8a07-b7823d9610ac",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Have customizable components",
+            "description": "Expose styling/behavior via props rather than inheritance; keep APIs consistent across components.",
+            "risk": " - Developers create one-off component variants instead of extending existing ones, causing duplication\n - Inconsistent prop APIs across components increase cognitive load and slow down development\n - Hardcoded styles make global theming or white-labeling difficult or impossible to implement\n - Tight coupling between component appearance and behavior reduces reusability across different contexts",
+            "position": 1,
+            "templateAreaId": "95028922-4f68-415a-b5b6-da2060a44fb5",
+            "lineageId": "f842bee5-62e9-455b-a247-19c423fef259",
+            "comments": [
+              {
+                "id": "af4394e6-c1d7-4a1e-9528-00a047d34054",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "774ae739-c3b3-452e-8a07-b7823d9610ac",
+                "comment": "https://legacy.reactjs.org/docs/composition-vs-inheritance.html",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "8198229f-10a4-4791-8be2-436fa79f6856",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Ability to change styles depending on variables",
+            "description": "Use theme for common usage elements as one source of truth",
+            "risk": " - Global style changes require manual updates across multiple files instead of a single theme source\n - Inconsistent use of hardcoded values (colors, spacing, typography) leads to visual inconsistency\n - White-labeling or rebranding becomes a large-scale effort without a centralized theme system\n - Dark mode or accessibility adjustments are significantly harder without variable-driven styling",
+            "position": 2,
+            "templateAreaId": "95028922-4f68-415a-b5b6-da2060a44fb5",
+            "lineageId": "c425702d-5924-490a-a1df-33c3590e4507",
+            "comments": [
+              {
+                "id": "c4ef87c4-8d66-48c7-9dfa-8773c7a42d43",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "8198229f-10a4-4791-8be2-436fa79f6856",
+                "comment": "https://tailwindcss.com/docs/theme",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "84f57d9c-9657-498e-8b36-d603dd669370",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Have documentation (like Storybook)",
+            "description": "Use stories to show props, usage, and variants; treat them as the source of truth for examples and states.",
+            "risk": " - Developers are unaware of existing components and build duplicates instead of reusing them\n - QA and designers cannot verify component states and variants without a visual reference\n - Onboarding takes longer when there is no interactive catalog of available UI building blocks\n - Component APIs become inconsistent over time without stories enforcing documented usage contracts",
+            "position": 3,
+            "templateAreaId": "95028922-4f68-415a-b5b6-da2060a44fb5",
+            "lineageId": "55737ebe-56b5-438f-bcaf-bf3106dfd5de",
+            "comments": [
+              {
+                "id": "3ce4273e-4639-4a61-a64f-113221411713",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "84f57d9c-9657-498e-8b36-d603dd669370",
+                "comment": "https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "8bd4c0d9-ec6a-4069-ac27-74f8a598cf8b",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Accessibility built-in",
+            "description": "Define a11y guidelines for all components (roles, labels, hit-slop, focus order), and add a11y stories/checks to the kit.",
+            "risk": " - Screen reader users cannot navigate the app without proper roles, labels, and focus management\n - Legal and compliance risks in markets where WCAG accessibility standards are legally required\n - Accessibility issues discovered late in the project are significantly more expensive to fix retroactively\n - Components fail automated a11y checks in CI, blocking releases without built-in accessibility from the start",
+            "position": 4,
+            "templateAreaId": "95028922-4f68-415a-b5b6-da2060a44fb5",
+            "lineageId": "3fd87a38-ac71-4bd0-8835-3d5bb0e231df",
+            "comments": [
+              {
+                "id": "f6c168fe-8e6e-40c2-b3b6-3b9f4bfc3d23",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "8bd4c0d9-ec6a-4069-ac27-74f8a598cf8b",
+                "comment": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_accessibility",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "d6ed51fd-839a-49a4-ac17-1cd0f5c9017f",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Performance guardrails",
+            "description": "Prevent unnecessary re-renders (stable props, memo), measure performance with profiling tools, and document expected performance per component.",
+            "risk": " - Unnecessary re-renders degrade app responsiveness and increase CPU usage, especially on low-end devices\n - Performance regressions introduced silently in PRs without measurable baselines or profiling benchmarks\n - No documentation of expected component performance makes it impossible to detect degradation over time\n - Users experience janky UI when memo and stable prop patterns are applied inconsistently across the codebase",
+            "position": 5,
+            "templateAreaId": "95028922-4f68-415a-b5b6-da2060a44fb5",
+            "lineageId": "6d8d3664-c995-4795-a73c-3a67e51f58a5",
+            "comments": [
+              {
+                "id": "e24a347c-e03b-4c20-a1d2-bab6525e963e",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "d6ed51fd-839a-49a4-ac17-1cd0f5c9017f",
+                "comment": "https://react.dev/reference/react/memo",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "d1041bad-efd2-44df-8d47-940d9d41636c",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Technology stack",
+        "position": 8,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "9854610f-6605-4a51-99c0-b9fc893ad0be",
+        "tasks": [
+          {
+            "id": "07d1b7c4-999e-48c8-9f18-12577dfb6eac",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Use of modern and popular libraries (or justify alternatives)",
+            "description": "Select libraries that are actively maintained and community-backed (e.g., React, Zustand, React Query). If a niche library is used, document rationale (stability, performance, or unique feature).",
+            "risk": " - Abandoned or poorly maintained libraries introduce unresolved security vulnerabilities over time\n - Niche or undocumented library choices make onboarding harder and reduce available community support\n - Inconsistent library selection across projects increases cognitive load when developers switch between teams\n - Hard-to-justify technology choices create friction during client audits or architecture reviews",
+            "position": 0,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "e4960dda-3655-41c7-aeb2-7a10897d65b3",
+            "comments": [
+              {
+                "id": "d311d29c-4275-43fc-8793-80e7deb0f055",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "07d1b7c4-999e-48c8-9f18-12577dfb6eac",
+                "comment": "https://aditya-tyagi.medium.com/the-right-way-of-selecting-an-npm-library-for-your-projects-732f61ad0e04",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "e6473ec5-853d-44f1-bd7f-7f3160f769f1",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Implement typing",
+            "description": "Enforce TypeScript for all new code; enable strict mode and type-check in CI (tsc --noEmit). Add incremental typing to legacy JS files.",
+            "risk": " - Runtime type errors reach production that would have been caught at compile time with strict mode\n - Loose or missing types provide false confidence without enforcing real type safety across the codebase\n - CI without type-checking allows type errors to accumulate silently until they cause runtime failures\n - Legacy JS files left untyped become long-term maintenance liabilities and sources of hard-to-trace bugs",
+            "position": 1,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "dc343868-29a8-49e0-8fb5-fddbc9143a8c",
+            "comments": [
+              {
+                "id": "19cd7400-2c83-4c9a-947a-232893af6698",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "e6473ec5-853d-44f1-bd7f-7f3160f769f1",
+                "comment": "https://reactnative.dev/docs/typescript",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "69278617-180b-4b5d-ac02-508e37ab222f",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Fresh version of Framework",
+            "description": "Keep React version aligned with latest LTS / stable release;",
+            "risk": " - Outdated React versions miss critical performance improvements and security patches\n - Incompatibility with modern libraries that drop support for older React versions blocks dependency upgrades\n - Accumulating version gap makes future major upgrades significantly more complex and risky\n - Team cannot leverage new React features (concurrent mode, Server Components) that improve delivery speed",
+            "position": 2,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "b5045384-3eb1-48c2-be7e-885037d367d7",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "cfb17503-e28b-47c8-b7ec-c3911b707c12",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Migrations to new language versions",
+            "description": "Follow community recommendations for Node.js & TypeScript versions (e.g., Node 20+, TS >=5). Run compatibility CI jobs before rollout.",
+            "risk": " - Unplanned breaking changes during forced migrations disrupt active development and delay delivery\n - Security vulnerabilities in outdated Node.js or TypeScript versions remain unpatched without a migration strategy\n - Compatibility issues with newer dependencies go undetected without CI jobs validating version upgrades\n - Technical debt accumulates as the gap between current and recommended versions widens over time",
+            "position": 3,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "f7018d82-06a3-40b7-91b4-ce56e5d5d9e2",
+            "comments": [
+              {
+                "id": "9c41bbc9-8542-466e-a266-7385604a5c04",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "cfb17503-e28b-47c8-b7ec-c3911b707c12",
+                "comment": "https://nodejs.org/en/about/releases",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "ca7a5263-1666-45ee-9fef-2cbb36fb0b7b",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Regular update of library versions",
+            "description": "Review and update dependencies quarterly; use Dependabot or Renovate to automate PRs. Validate each bump with regression tests.",
+            "risk": " - Known security vulnerabilities persist when dependencies are not regularly updated\n - Large infrequent updates introduce multiple breaking changes simultaneously, making root cause analysis difficult\n - Outdated libraries lose community support, reducing available fixes and documentation over time\n - Without automated tooling, dependency drift goes unnoticed until a critical CVE forces an emergency update",
+            "position": 4,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "1085dfe4-fa73-4ffd-82c8-f5827d343fcb",
+            "comments": [
+              {
+                "id": "5e47df42-9e93-424e-9f74-d9949f24d531",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "ca7a5263-1666-45ee-9fef-2cbb36fb0b7b",
+                "comment": "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "de9159b7-f79d-4dd9-91d3-7fc8bf3cbfe7",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Check compatibility of libraries",
+            "description": "Before major updates, verify compatibility via peerDeps and RN compatibility matrix; test builds locally and in CI.",
+            "risk": " - Major version bumps break peer dependencies silently, causing runtime errors in production\n - Incompatible libraries discovered late in the release cycle block deployments and force emergency rollbacks\n - Missing compatibility checks in CI allow broken dependency combinations to reach staging or production\n - Time lost debugging compatibility issues that could have been detected with a pre-update validation step",
+            "position": 5,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "6e821cb6-1e28-4631-8511-3f24f4a36829",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "ec08e90e-8577-443f-b102-21e2c8854dcd",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Expedient use of libraries (one task – one library)",
+            "description": "For each functional task (e.g., forms, storage), use a single, well-maintained library; avoid multiple overlapping tools. Document chosen library per domain in tech stack doc.",
+            "risk": " - Multiple libraries solving the same problem increase bundle size and cognitive load across the team\n - Inconsistent approaches to the same task (e.g., two form libraries) lead to unpredictable behavior and bugs\n - Onboarding developers must learn redundant tools that serve the same purpose\n - Undocumented library choices result in new team members introducing yet another overlapping dependency",
+            "position": 6,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "a25e804b-6d68-4310-8004-bf0138d66b68",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "0aeb6ef2-1aca-4c67-892a-33a9236a8583",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Track deprecated or unsafe dependencies",
+            "description": "Monitor vulnerabilities and deprecated APIs using npm audit, npx depcheck, or SonarQube dependency scanner. Flag and remove unmaintained libraries.",
+            "risk": "Deprecated & unsafe dependencies\n - Unmaintained libraries with known CVEs remain in production without active vulnerability monitoring\n - Deprecated APIs break silently on runtime or during Node.js/browser upgrades without early detection\n - No automated scanning means security issues are discovered reactively after a breach rather than proactively\n - Dead dependencies bloat the bundle and increase attack surface without regular depcheck audits",
+            "position": 7,
+            "templateAreaId": "d1041bad-efd2-44df-8d47-940d9d41636c",
+            "lineageId": "80ebb1dd-87cf-43b8-9b06-951825546622",
+            "comments": [],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Security",
+        "position": 9,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "57827ab0-7a92-4d05-9749-ece3cefd1bde",
+        "tasks": [
+          {
+            "id": "2e97757c-d4db-4bf7-9e76-3b5d7bdfcef5",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Avoid usage of persistant storage",
+            "description": "Minimize storing data locally to reduce leaks.",
+            "risk": "Persistent storage misuse\n - Sensitive user data exposed via localStorage or cookies when persistent storage is used without strict controls\n - Data leaks between user sessions when storage is not properly cleared on logout\n - Compliance violations (GDPR, HIPAA) when PII is stored client-side without explicit justification\n - Security vulnerabilities introduced via XSS attacks targeting unprotected locally stored data",
+            "position": 0,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "9c73db7b-11af-4e00-8613-32ad75f67e61",
+            "comments": [
+              {
+                "id": "b5b6d732-0f7c-46ef-918f-b0b77907fcf6",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "2e97757c-d4db-4bf7-9e76-3b5d7bdfcef5",
+                "comment": "https://www.frontendtools.tech/blog/frontend-security-essentials-guide-2025",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "b4227ea6-0f91-4857-b682-8a4e8fc730a4",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Strict User Input",
+            "description": "Validate and sanitize all user-provided data.",
+            "risk": "Strict user input validation\n - XSS and injection attacks succeed when user input is rendered or processed without sanitization\n - Malformed or unexpected data bypasses the frontend and corrupts backend state without client-side validation\n - App crashes on edge cases (empty fields, special characters, oversized inputs) without defensive input handling\n - Inconsistent validation across forms creates exploitable gaps that attackers can target selectively",
+            "position": 1,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "1eb1df80-16e0-4928-802f-7bd21e0a040c",
+            "comments": [
+              {
+                "id": "847c8c7e-9e3a-47ae-bb50-20bbc92e5e69",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "b4227ea6-0f91-4857-b682-8a4e8fc730a4",
+                "comment": "https://developer.mozilla.org/en-US/docs/Web/Security",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "91c8ff89-e580-46ae-ace3-02e2cab38a2c",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Beware of hidden fields or data stored in browser memory",
+            "description": "Avoid exposing sensitive info in hidden or cached fields.",
+            "risk": "Hidden fields & browser memory exposure\n - Sensitive data (tokens, PII) cached in memory or hidden fields becomes accessible via browser dev tools\n - XSS attacks extract sensitive values stored in hidden form fields or global JS variables\n - Session data persists in memory after logout, exposing it to subsequent users on shared devices\n - Unintended data leakage through browser autofill or cached form values in hidden inputs",
+            "position": 2,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "e490d38a-7be3-49c3-9f1d-aa1481851d6d",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "fd27a6c5-e301-4dd8-8e55-688145f5baae",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Use a strong Content Security Policy (CSP)",
+            "description": "Control sources to prevent XSS and data injection. Prevent or minimize the risk of certain types of security threats.",
+            "risk": " - XSS attacks execute malicious scripts when no CSP restricts allowed script sources\n - Third-party data injection goes unblocked without explicit content source whitelisting\n - Absence of CSP headers fails security audits and compliance checks in enterprise or regulated environments\n - Inline scripts and eval usage remain unchecked, creating persistent attack vectors across the application",
+            "position": 3,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "a1411daf-2876-48af-9ca8-245decd19203",
+            "comments": [
+              {
+                "id": "26a193ec-502f-44af-8087-fff89ace97a6",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "fd27a6c5-e301-4dd8-8e55-688145f5baae",
+                "comment": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "9729e4a6-e0cf-40a3-865d-6c9598025998",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Disable iframe embedding",
+            "description": "Prevent your site from being framed by others.  Use the X-Frame-Options header",
+            "risk": " - Clickjacking attacks trick users into performing unintended actions on a visually hidden embedded version of the app\n - Absence of X-Frame-Options allows malicious third-party sites to embed and exploit the application\n - Sensitive user actions (form submissions, payments) can be hijacked without frame embedding restrictions\n - Fails security headers audit, reducing trust score and flagging the app in automated vulnerability scans",
+            "position": 4,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "ea70f92e-8ac3-48b7-a0de-bbba4bd56844",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "4b5ae7a3-e7a4-4bd2-98c3-fd43556cfb23",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Keep errors generic",
+            "description": "Avoid revealing internal implementation details in error messages.",
+            "risk": " - Detailed error messages expose stack traces, file paths, or internal logic that attackers use to map the system\n - Leaked implementation details (DB schema, API structure) significantly lower the effort needed to exploit vulnerabilities\n - Verbose errors in production reveal technology stack and library versions, enabling targeted attacks\n - Compliance failures when sensitive system information is exposed to end users through unhandled error responses",
+            "position": 5,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "30eada80-987a-41a4-86f0-3e21ade4ec77",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "f430bf57-a2e7-49df-8309-c7cbff9744ed",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Set `Referrer-Policy`",
+            "description": "Limit URL data sent in HTTP referrers.",
+            "risk": " - Sensitive URL parameters (tokens, user IDs, session data) leaked to third-party services via referrer headers\n - Analytics or ad platforms receive private navigation data without user awareness or consent\n - GDPR and privacy compliance violations when referrer headers expose user behavior across domains\n - Authentication tokens embedded in URLs silently transmitted to external resources loaded on the page",
+            "position": 6,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "5d84c03b-e1a2-4eb0-b16a-13d4ff5bf35c",
+            "comments": [
+              {
+                "id": "2f41e156-fe6b-43ff-8bee-443ed4eb88eb",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "f430bf57-a2e7-49df-8309-c7cbff9744ed",
+                "comment": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Referrer_policy",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "867ad8ad-42b0-4e70-aa6f-f39aae59bb37",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Audit dependencies regularly",
+            "description": "Check third-party libraries for vulnerabilities often.",
+            "risk": " - Known CVEs remain unpatched in production when vulnerability scanning is infrequent or manual\n - Transitive dependency vulnerabilities go undetected without deep audit of the full dependency tree\n - Emergency hotfixes under pressure when a critical vulnerability is discovered without a regular audit cadence\n - Compliance and security audit failures when no evidence of regular dependency review process exists",
+            "position": 7,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "0f2e5337-09b3-4f50-b261-c75daf359524",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "bd26e80d-46a1-45e1-bad0-4b848c728a25",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Protect Sensitive Data with Encryption",
+            "description": "Encrypt personal or critical data in transit and rest.",
+            "risk": " - Unencrypted data in transit intercepted via man-in-the-middle attacks exposes user credentials and PII\n - Data breaches have significantly higher legal and reputational impact when stored data is not encrypted at rest\n - GDPR, HIPAA, and PCI-DSS compliance failures when encryption standards are not enforced across the system\n - Client trust permanently damaged when sensitive personal or financial data is exposed due to missing encryption",
+            "position": 8,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "4c90f9ec-782e-48b6-a4a0-372a2991af26",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "06de7113-0723-45c2-893b-90f107df996b",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Compartmentalize your application if possible",
+            "description": "Isolate components to reduce security risks.",
+            "risk": " - A single compromised component gains access to the entire application without isolation boundaries\n - Security breach blast radius expands across the whole system when modules share unrestricted access\n - Harder to audit and enforce least-privilege principles without clear component separation\n - Cascading failures occur when one module's vulnerability or crash brings down unrelated parts of the application",
+            "position": 9,
+            "templateAreaId": "533a324f-5890-44d1-9ea7-8d04e78e3730",
+            "lineageId": "edbb929f-88d4-41b5-834b-f299cfd19c77",
+            "comments": [
+              {
+                "id": "510706d0-4148-4456-8a86-99b7f7e6de98",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "06de7113-0723-45c2-893b-90f107df996b",
+                "comment": "https://www.dopethemes.com/html5-web-storage-security-risks-safeguarding-localstorage-and-sessionstorage",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "State Managment",
+        "position": 10,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "c0ed2dbc-db1b-4538-8de5-d42c77fd8995",
+        "tasks": [
+          {
+            "id": "80fa991b-eb12-47a2-8b62-c76445dcb0ad",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Сache only infrequently changing content",
+            "description": "Store stable data to reduce unnecessary reloads.",
+            "risk": " - Frequent unnecessary API calls degrade performance and increase server load without caching stable data\n - Stale cache served to users when cache invalidation strategy is missing or incorrectly implemented\n - Sensitive or user-specific data accidentally cached and shared across sessions on shared devices\n - Over-caching dynamic data leads to users seeing outdated information without a clear refresh mechanism",
+            "position": 0,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "5aa8f9d7-ec54-452e-93e4-405226ef1908",
+            "comments": [
+              {
+                "id": "e8d9ea89-355a-4c9f-80a5-edc674ae7c53",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "80fa991b-eb12-47a2-8b62-c76445dcb0ad",
+                "comment": "https://www.codemancers.com/blog/2024-managing-server-state-in-react-app-using-react-query",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "236e78d5-31d2-4ea7-9ee2-a21677d10bf3",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Use Cache Invalidation Strategy",
+            "description": "Refresh cached data when it becomes stale.",
+            "risk": " - Users see outdated data after mutations without a proper invalidation or refetch trigger\n - Stale cache persists indefinitely when no TTL or event-based invalidation is defined\n - Hard-to-reproduce bugs caused by inconsistent state between server and cached client data\n - Over-invalidation causes performance regression by refetching data more frequently than necessary",
+            "position": 1,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "2cd946c2-8681-4fc2-80ea-6ef9f159e708",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "1132b39c-4240-4da1-9758-8677732c073d",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Ensure the display of relevant content",
+            "description": "Only render up-to-date and needed information.",
+            "risk": " - Users make decisions based on stale or incorrect data without proper refresh and validation mechanisms\n - Unnecessary data rendered in the UI increases memory consumption and degrades rendering performance\n - Trust erosion when users notice outdated information that doesn't reflect recent actions or server state\n - Security risk when sensitive data remains visible in the UI after it should have been cleared or updated",
+            "position": 2,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "0927e260-8461-48e6-b159-62130473bb99",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "62daad65-ab19-46ab-9db4-ac259a024ae1",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Fill the cache only with necessary data",
+            "description": "Avoid storing large or redundant datasets.",
+            "risk": " - Oversized cache payloads increase memory consumption and degrade app performance on low-end devices\n - Redundant or unused data in state increases complexity and makes debugging harder\n - Sensitive fields cached unnecessarily expand the attack surface for XSS or memory inspection exploits\n - Large cache payloads slow down serialization and rehydration, impacting app startup and navigation time",
+            "position": 3,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "46ce584f-bbb4-46e4-a1b4-db3d30f22ec1",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "91a2aa2a-6c7b-44d7-8312-ee6de4f86396",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Immutability",
+            "description": "Treat state as read-only; create new objects on change.",
+            "risk": " - Direct state mutations cause unpredictable UI behavior and hard-to-trace bugs in React rendering cycle\n - Shared mutable state leads to race conditions when multiple components modify the same object simultaneously\n - Debugging becomes significantly harder without immutable state history for time-travel and change tracking\n - Performance optimizations like memoization and shallow comparison break when object references are mutated in place",
+            "position": 4,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "e9c2383d-e9b0-434f-809d-5a5aecde0e25",
+            "comments": [
+              {
+                "id": "63ae23f4-8a89-4b1d-a523-aef885e739ca",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "91a2aa2a-6c7b-44d7-8312-ee6de4f86396",
+                "comment": "https://uk.react.dev/reference/rules",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "73ea603a-acd4-4835-9dbc-387db61f0567",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Unidirectional data flow",
+            "description": "Keep data flowing top-down for predictability.",
+            "risk": " - Bidirectional data flow creates unpredictable state updates that are difficult to trace and debug\n - Circular dependencies between components lead to infinite render loops and cascading state changes\n - Lack of a single source of truth makes it unclear which component owns and controls a given piece of state\n - Testing becomes significantly harder when data flows in multiple directions without a predictable update pattern",
+            "position": 5,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "8a01170e-4da9-42f5-8c91-0483cf2f8ef0",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "aef4ea2f-a5b8-4d3c-a024-4be7a17e0fad",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Context instead of prop drilling",
+            "description": "Use React Context to share state across components.",
+            "risk": " - Deeply nested prop drilling makes components tightly coupled and difficult to refactor or reuse\n - Missing context leads developers to duplicate state across sibling components instead of sharing a single source\n - Excessive re-renders triggered by poorly structured context cause performance degradation across large component trees\n - Lack of context boundaries makes it hard to scope state correctly, leading to unintended global state leakage",
+            "position": 6,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "21c37200-e708-4984-91c6-96e68ee39ab7",
+            "comments": [
+              {
+                "id": "d91dab9a-0b19-4888-b701-152521049b47",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "aef4ea2f-a5b8-4d3c-a024-4be7a17e0fad",
+                "comment": "https://uk.react.dev/learn/reacting-to-input-with-state",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "ad1ae407-4c0e-49e8-8c56-28d0624897ba",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Store data in the right place",
+            "description": "Keep state close to where it’s used.",
+            "risk": " - Global state bloated with local UI state increases complexity and makes the app harder to reason about\n - Components re-render unnecessarily when state is lifted too high without proper scoping\n - Local state scattered across unrelated components leads to synchronization bugs and inconsistent UI\n - Refactoring becomes costly when state is stored too far from the components that actually need it",
+            "position": 7,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "940c36cf-ff9a-4d2c-a06f-42122d1995b8",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "487bf77a-2227-4dac-bbbd-797fa98b224c",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Do not save derived state",
+            "description": "Compute values on render instead of storing them.",
+            "risk": " - Stored derived state goes out of sync with its source data, causing inconsistent and hard-to-debug UI behavior\n - Redundant state updates required to keep derived values in sync add unnecessary complexity to state management\n - Bug surface increases when the same data exists in multiple forms across the state tree\n - Performance overhead from storing and updating values that could be cheaply computed on each render",
+            "position": 8,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "a329ef4a-3a0d-4e60-93c5-801aefdaf9d2",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "7dd00021-e736-4985-8c9b-97780cef763a",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Expedient use of state-managment libraries",
+            "description": "Use Zustand, tanstack query, etc., only when necessary.",
+            "risk": " - Over-engineering simple local state with global libraries adds unnecessary complexity and boilerplate\n - Inconsistent state management patterns when libraries are introduced without clear guidelines on when to use them\n - Bundle size increases when heavyweight state management libraries are added for problems solvable with useState\n - Developers default to global state for everything, making components harder to isolate, test, and reuse",
+            "position": 9,
+            "templateAreaId": "9d062b40-a9e8-491a-87bb-39f485951b0a",
+            "lineageId": "50c686d2-4729-4a2a-88c0-e01133981a10",
+            "comments": [],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "0807a30d-0918-4035-b08c-85aab8e2af2e",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Maintenance and Debugging",
+        "position": 11,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "9ac4610a-872b-41ac-bc9d-fd7f53345d96",
+        "tasks": [
+          {
+            "id": "a00d4440-232b-4ba4-ad1d-561f4ade4742",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Setup Sentry for error analytics",
+            "description": "Install & initialize Sentry RN SDK; capture JS + native crashes; tag releases/environments.",
+            "risk": " - Production bugs go undetected until users report them without automated error capturing and alerting\n - No stack traces or release context makes reproducing and diagnosing production issues significantly harder\n - Silent JavaScript errors accumulate without visibility, masking growing instability in the application\n - Inability to correlate error spikes with specific releases or deployments without environment and version tagging",
+            "position": 0,
+            "templateAreaId": "0807a30d-0918-4035-b08c-85aab8e2af2e",
+            "lineageId": "8a973205-6393-47e7-be19-4651c48c9fad",
+            "comments": [
+              {
+                "id": "84e2daf7-cfb7-4507-98ae-88a8a673e07d",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "a00d4440-232b-4ba4-ad1d-561f4ade4742",
+                "comment": "https://docs.sentry.io/platforms/javascript/guides/react/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "de364910-051a-4ab7-8ea7-86a62dafe9d8",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Setup Sentry to track performance issues",
+            "description": "Enable tracing (transactions/spans) to find slow screens, network calls, and blocking work.",
+            "risk": " - Slow screens and blocking network calls go undetected without transaction-level performance tracing\n - No baseline performance data makes it impossible to detect regressions introduced by new releases\n - Performance degradation on specific devices or network conditions invisible without distributed tracing spans\n - Team reacts to performance complaints from users instead of proactively catching slowdowns before release",
+            "position": 1,
+            "templateAreaId": "0807a30d-0918-4035-b08c-85aab8e2af2e",
+            "lineageId": "23f28c32-2bb5-4d73-9808-0ae80bdae9aa",
+            "comments": [],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "f1443922-ca51-410a-b37f-9f966c356349",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Tech dept",
+        "position": 12,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "6a08bad2-ad17-4321-b85d-0177b05bc68a",
+        "tasks": [
+          {
+            "id": "150da4ab-e586-47f4-a691-f6c61acc5e07",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Availability of technical debt tickets with descriptions",
+            "description": "Maintain a clear backlog of tech-debt issues in your tracker (Jira, Linear, etc.) — each ticket must describe impact, risk, and estimated effort.",
+            "risk": " - Untracked technical debt grows invisibly until it causes critical failures or blocks feature development\n - No impact or effort estimates make it impossible to prioritize debt repayment against feature work\n - Team awareness of existing debt is lost when knowledge stays in developers' heads instead of a shared backlog\n - Stakeholders cannot make informed decisions about debt repayment without visible and described debt tickets",
+            "position": 0,
+            "templateAreaId": "f1443922-ca51-410a-b37f-9f966c356349",
+            "lineageId": "cb10ee30-73eb-49f9-99e6-274261c413c0",
+            "comments": [
+              {
+                "id": "ad14a326-c027-449b-8de0-7f5d91aee009",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "150da4ab-e586-47f4-a691-f6c61acc5e07",
+                "comment": "https://www.atlassian.com/agile/software-development/technical-debt",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "ed242637-3eb7-4f23-b008-6caaa14b0dbd",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Work with technical debt tickets",
+            "description": "Include tech-debt tickets in sprints or maintenance weeks; treat them as part of planned work, not ad hoc fixes.",
+            "risk": " - Debt tickets sit in the backlog indefinitely when not formally included in sprint planning\n - Ad hoc fixes without planning introduce new bugs and inconsistencies instead of properly resolving root causes\n - Developer morale decreases when accumulated debt makes everyday tasks frustrating and slow\n - Unplanned debt work disrupts sprint commitments and makes delivery timelines unpredictable for stakeholders",
+            "position": 1,
+            "templateAreaId": "f1443922-ca51-410a-b37f-9f966c356349",
+            "lineageId": "d3ab7af1-9697-4610-ab49-40d8e877b90b",
+            "comments": [
+              {
+                "id": "81ed26be-bcee-49ab-a979-286d23b3dd97",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "ed242637-3eb7-4f23-b008-6caaa14b0dbd",
+                "comment": "https://martinfowler.com/bliki/TechnicalDebtQuadrant.html",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "53ea69bc-f9e4-462c-ad93-7999496a5b31",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Prioritization of technical debt",
+            "description": "Evaluate impact vs. effort; prioritize debt that slows down delivery, increases bug count, or blocks upgrades. Integrate with release planning.",
+            "risk": " - High-impact debt blocking delivery or causing frequent bugs remains unaddressed without structured prioritization\n - Low-value debt gets resolved first when effort and impact are not explicitly evaluated against each other\n - Release planning becomes unpredictable when debt that blocks upgrades is not surfaced and scheduled in advance\n - Stakeholders lose trust in estimates when invisible unresolved debt consistently causes delivery delays",
+            "position": 2,
+            "templateAreaId": "f1443922-ca51-410a-b37f-9f966c356349",
+            "lineageId": "912bf503-c3eb-40c6-b8db-f41c885dfeb2",
+            "comments": [],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "f1925d6a-a837-4735-92e5-d7779d3abe0c",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Established process for tech-debt management",
+            "description": "Define a recurring review cycle: identify, log, evaluate, prioritize, and resolve. Communicate outcomes in retrospectives.",
+            "risk": " - Debt accumulates faster than it is resolved without a structured recurring review and resolution cycle\n - No retrospective communication leaves stakeholders and team members unaware of debt trends and progress\n - Inconsistent debt logging means only visible or critical debt gets tracked while systemic issues go unnoticed\n - Without a defined process, debt management depends on individual initiative rather than team accountability",
+            "position": 3,
+            "templateAreaId": "f1443922-ca51-410a-b37f-9f966c356349",
+            "lineageId": "438a19f4-5227-44d5-82fd-bab5e6416fbd",
+            "comments": [],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      },
+      {
+        "id": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+        "createdAt": "2026-07-14T07:57:26.813Z",
+        "deletedAt": null,
+        "title": "Documentation",
+        "position": 13,
+        "templateVersionId": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+        "lineageId": "09d3b93e-6f2d-49ad-bc1b-e46fafdd5d57",
+        "tasks": [
+          {
+            "id": "db6dadc5-e27e-466c-97ee-e740e217ec50",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "General tech documentation",
+            "description": "Keep setup, architecture, and development guides up to date in one place (e.g. Confluence, README).",
+            "risk": " - Onboarding new developers takes significantly longer without accessible and up-to-date setup and architecture guides\n - Critical system knowledge stays siloed with specific team members and is lost when they leave the project\n - Developers make architectural decisions inconsistent with existing patterns due to lack of documented guidelines\n - Outdated documentation is worse than none — it actively misleads developers and causes hard-to-diagnose issues",
+            "position": 0,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "2da773eb-21f6-4905-9108-af646352f3af",
+            "comments": [
+              {
+                "id": "a050969d-b78e-4e54-a0e9-00e50376a8ee",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "db6dadc5-e27e-466c-97ee-e740e217ec50",
+                "comment": "https://react.dev/learn",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "f5a961ad-0c1f-4ae8-a422-e1c05168ef86",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Open-source licensing audit and compliance",
+            "description": "Maintain a dependency license list; verify all libraries are free for commercial use (MIT, Apache, BSD). Automate scanning via license-checker or Snyk in CI. Store summary in /docs/licenses and update each release.",
+            "risk": " - Copyleft licenses (GPL) used in commercial products without detection expose the company to legal liability\n - Manual license tracking becomes outdated as dependencies are added or updated without automated scanning\n - Client or enterprise audits fail when no documented license inventory exists for the project\n - Incompatible license combinations discovered late in the project force emergency dependency replacements before release",
+            "position": 1,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "4196d42b-22a2-475b-8bf0-76203cea4516",
+            "comments": [
+              {
+                "id": "75967ab3-ecff-435d-bf0d-3c9c1cf403eb",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "f5a961ad-0c1f-4ae8-a422-e1c05168ef86",
+                "comment": "https://www.npmjs.com/package/license-checker",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "b767f1d9-d199-4a3f-88cf-a7333cc2d97f",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Code documentation (JSDoc/TSDoc)",
+            "description": "Use inline JSDoc or TSDoc for functions, hooks, and complex modules. Auto-generate docs if possible.",
+            "risk": " - Developers misuse or misunderstand complex functions and hooks without inline documentation\n - Onboarding time increases when intent and expected behavior of modules must be reverse-engineered from code\n - Auto-generated API docs cannot be produced without consistent JSDoc/TSDoc annotations across the codebase\n - Undocumented edge cases and assumptions in complex logic become sources of recurring bugs over time",
+            "position": 2,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "538d89d7-c878-4200-bc0b-1d93146e1002",
+            "comments": [
+              {
+                "id": "5950fffd-0b3f-49cf-9e01-197eea3926ba",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "b767f1d9-d199-4a3f-88cf-a7333cc2d97f",
+                "comment": "https://tsdoc.org/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "ea473bd7-d066-491a-9421-4df76255dd82",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Architecture overview & decisions",
+            "description": "Keep a short diagram (C4 or similar) and maintain ADRs for key decisions (state, navigation, APIs).",
+            "risk": " - New team members make decisions that conflict with existing architecture without a documented overview\n - Repeated debate over already-resolved architectural choices wastes time without ADRs as a reference point\n - System complexity becomes impossible to communicate to stakeholders or new developers without a visual diagram\n - Context behind key decisions (why Zustand over Redux, why REST over GraphQL) is lost when team members leave",
+            "position": 3,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "ec92504b-15f5-4b25-a629-751d4e44de60",
+            "comments": [
+              {
+                "id": "8146a3ff-b971-413c-bff1-f9ae0ccf7bce",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "ea473bd7-d066-491a-9421-4df76255dd82",
+                "comment": "https://c4model.com/",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "662bf91d-f88f-4482-924d-56c18543af62",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Folder structure & patterns (Cookbook)",
+            "description": "Document folder layout and shared patterns (components, hooks, services). Keep it consistent across teams.",
+            "risk": " - Inconsistent file organization across teams makes navigating and maintaining the codebase significantly harder\n - Developers place new files arbitrarily without a documented structure, creating long-term organizational debt\n - Code reviews slow down when reviewers must assess structural decisions that should already be standardized\n - Shared patterns reinvented independently by different developers lead to duplicate and diverging implementations",
+            "position": 4,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "6daa0820-6e2d-448c-a8a6-bd376521cd89",
+            "comments": [
+              {
+                "id": "3861381e-508a-440c-aa09-2a4ed95322eb",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "662bf91d-f88f-4482-924d-56c18543af62",
+                "comment": "https://github.com/airbnb/javascript/tree/master/react",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "6776cf72-4a07-421f-b6e8-5f42a8dcde25",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Risk register & strategy",
+            "description": "Track delivery and technical risks, assign owners, update mitigation plans each sprint.",
+            "risk": " - Delivery and technical risks go unnoticed until they become critical blockers without proactive tracking\n - No assigned ownership means identified risks are acknowledged but never actively mitigated\n - Stakeholders are blindsided by issues that were known internally but never formally tracked or escalated\n - Mitigation plans become stale and irrelevant without regular sprint-level reviews and updates",
+            "position": 5,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "95ddcc8b-7583-48dc-bb19-58a1b5f7de83",
+            "comments": [
+              {
+                "id": "875e3a18-2a8d-464a-9567-53b6c2e08c38",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "6776cf72-4a07-421f-b6e8-5f42a8dcde25",
+                "comment": "https://www.atlassian.com/agile/project-management/risk-management",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "62632253-2319-48f6-b03b-283337ce9e74",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Non-functional requirements (NFRs)",
+            "description": "Define measurable targets for performance, security, and maintainability; review before release.",
+            "risk": " - Unmeasurable or undefined NFRs make it impossible to objectively validate the system before release\n - Performance and security issues discovered post-release are significantly more costly to fix than if caught early\n - Release sign-off becomes subjective without concrete NFR targets to verify against\n - Recurring quality issues across releases when NFRs are not reviewed and enforced as part of the definition of done",
+            "position": 6,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "5285631a-3065-46d8-85b8-ba82314eb1cc",
+            "comments": [
+              {
+                "id": "a81390fc-9741-474c-9b49-4835e367411b",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "62632253-2319-48f6-b03b-283337ce9e74",
+                "comment": "https://legacy.reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-chrome-performance-tab",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          },
+          {
+            "id": "cb3433c8-9ebb-4f72-a230-b49e7237d92f",
+            "createdAt": "2026-07-14T07:57:26.813Z",
+            "deletedAt": null,
+            "body": "Stakeholder register",
+            "description": "PM creates and maintains a list of all key stakeholders (client + internal team), including their roles, responsibilities, and communication preferences.",
+            "risk": " - Key decision-makers missed in critical communications due to incomplete or outdated stakeholder mapping\n - Conflicting directions received from multiple client-side stakeholders without clarity on who has final authority\n - Delays caused by routing approvals or questions to the wrong person without defined roles and responsibilities\n - Onboarding new PM or team members takes longer without a documented map of all project stakeholders and their preferences",
+            "position": 7,
+            "templateAreaId": "be821c14-a57d-454a-8fdc-0b01bf34aece",
+            "lineageId": "7a49412d-6c3c-4683-9ce2-b8c6e58b2258",
+            "comments": [
+              {
+                "id": "4517ee26-48d3-4fba-9f73-fdd120d0fd99",
+                "createdAt": "2026-07-14T07:57:26.813Z",
+                "deletedAt": null,
+                "templateTaskId": "cb3433c8-9ebb-4f72-a230-b49e7237d92f",
+                "comment": "https://www.pmi.org/learning/library/stakeholder-management-task-project-success-7736",
+                "commenterId": "555065d9-0787-4510-9b72-9f248d95d698",
+                "type": "LINK",
+                "commenter": {
+                  "id": "555065d9-0787-4510-9b72-9f248d95d698",
+                  "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+                  "email": "s.bychok@geniusee.com",
+                  "firstName": "Serhii",
+                  "lastName": "Bychok",
+                  "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+                  "createdAt": "2025-11-17T15:22:29.020Z",
+                  "deletedAt": null,
+                  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+                  "position": "React. js Developer",
+                  "erpId": 51,
+                  "fullName": "Serhii Bychok",
+                  "unit": null,
+                  "__entity": "User"
+                },
+                "__entity": "TemplateTaskComment"
+              }
+            ],
+            "__entity": "TemplateTask"
+          }
+        ],
+        "__entity": "TemplateEstimationArea"
+      }
+    ],
+    "__entity": "TemplateVersion"
+  },
+  "versions": [
+    {
+      "id": "8a0af746-bad8-4722-9f93-d1434a2bee3d",
+      "createdAt": "2025-12-17T14:38:24.194Z",
+      "deletedAt": null,
+      "templateId": "98527081-908e-4782-b982-8fa018fe90d0",
+      "versionNo": 1,
+      "parentVersionId": null,
+      "__entity": "TemplateVersion"
+    },
+    {
+      "id": "af840579-87a3-45fb-b8fa-c8109385007e",
+      "createdAt": "2026-02-06T14:12:57.316Z",
+      "deletedAt": null,
+      "templateId": "98527081-908e-4782-b982-8fa018fe90d0",
+      "versionNo": 2,
+      "parentVersionId": "8a0af746-bad8-4722-9f93-d1434a2bee3d",
+      "__entity": "TemplateVersion"
+    },
+    {
+      "id": "9c62401c-6223-4690-ba1a-4151023f8124",
+      "createdAt": "2026-02-09T21:09:49.495Z",
+      "deletedAt": null,
+      "templateId": "98527081-908e-4782-b982-8fa018fe90d0",
+      "versionNo": 3,
+      "parentVersionId": "af840579-87a3-45fb-b8fa-c8109385007e",
+      "__entity": "TemplateVersion"
+    },
+    {
+      "id": "7b00cc5d-2224-4a2b-b8a6-a159f0e74d64",
+      "createdAt": "2026-05-11T11:16:31.084Z",
+      "deletedAt": null,
+      "templateId": "98527081-908e-4782-b982-8fa018fe90d0",
+      "versionNo": 4,
+      "parentVersionId": "9c62401c-6223-4690-ba1a-4151023f8124",
+      "__entity": "TemplateVersion"
+    },
+    {
+      "id": "228441a5-fc91-442c-99e8-fd2c72e4597d",
+      "createdAt": "2026-07-14T07:57:26.813Z",
+      "deletedAt": null,
+      "templateId": "98527081-908e-4782-b982-8fa018fe90d0",
+      "versionNo": 5,
+      "parentVersionId": "7b00cc5d-2224-4a2b-b8a6-a159f0e74d64",
+      "__entity": "TemplateVersion"
+    }
+  ],
+  "owner": {
+    "id": "555065d9-0787-4510-9b72-9f248d95d698",
+    "cognitoId": "6344b8a2-8071-7007-8738-21997349e220",
+    "email": "s.bychok@geniusee.com",
+    "firstName": "Serhii",
+    "lastName": "Bychok",
+    "roleId": "a6b216a0-04c5-4bad-bd7c-059a4d01ee8e",
+    "createdAt": "2025-11-17T15:22:29.020Z",
+    "deletedAt": null,
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLcWkSthDKtfO49hKAfBDafA9X2AIoajF5Byc2s6ZSmVkSzdQ=s96-c",
+    "position": "React. js Developer",
+    "erpId": 51,
+    "fullName": "Serhii Bychok",
+    "unit": null,
+    "__entity": "User"
+  },
+  "__entity": "Template"
+}
